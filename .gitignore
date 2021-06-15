@@ -1,0 +1,17 @@
+C++_simulation/
+Input/
+README.md
+Research_Proposal.odp
+Script/.RData
+Script/.Rhistory
+Script/90/.RData
+Script/90/.Rhistory
+Script/90/.gap_rm.sh.swp
+Script/
+Simul/
+buildBlock.sh
+paper/
+test_90_species/
+test_drosophila/
+test_human_mouse_rat/
+test_mouse_human_macaque/
