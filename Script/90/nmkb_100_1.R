@@ -1,0 +1,167 @@
+suppressPackageStartupMessages(library(Biostrings))
+suppressPackageStartupMessages(library(stringr))
+suppressPackageStartupMessages(library(seqinr))
+suppressPackageStartupMessages(library(R.utils))
+suppressPackageStartupMessages(library(plyr))
+suppressPackageStartupMessages(library(expm))
+suppressPackageStartupMessages(library(purrr))
+suppressPackageStartupMessages(library(matlib))
+suppressPackageStartupMessages(library(jsonlite))
+
+#rewrite the tolrence criterion as rms in nmkb package and apply the nmkb method
+
+# library(devtools)
+# library(roxygen2)
+# setwd("~/Dropbox (ASU)/Indel_project/Script/90")
+# getwd()
+# devtools::create("nmkb")
+
+
+#setwd("~/Dropbox (ASU)/Indel_project/Script")
+#document
+#devtools::document(pkg="./nmkb")
+#load_package
+#devtools::load_all(path="~/Dropbox (ASU)/Indel_project/Script/90/nmkb")
+getwd()
+devtools::load_all(path="../Script/90/nmkb")
+
+#sources all functions needed.
+sub = "~/Dropbox (ASU)/Indel_project/Script/sources/"
+source(paste0(sub,"codon_call.R"))
+source(paste0(sub,"gtr.R"))
+source(paste0(sub,"mg94.R"))
+source(paste0(sub,"omega_coor.R"))
+source(paste0(sub,"sigma_coor.R"))
+source(paste0(sub,"pseudo_data.R"))
+source(paste0(sub,"init_f.R"))
+source(paste0(sub,"LL.R"))
+source(paste0(sub,"init_sigma.R"))
+source(paste0(sub,"init_omega.R"))
+source(paste0(sub,"phylo_em.R"))
+
+
+#-log_likelihood
+LL_min  = function(theta){
+  # rmat  = GTR(theta[1:6], f0)
+  # Rmat  = MG94(rmat, theta[7], cod)
+  # -sum(log(expm(Rmat)*cf0)*dat1)
+  val = LL(cod,codonstrs,syn,theta,f0,cf0,dat,num)
+  return(-val)
+}
+
+
+main = function(Name, inFile){
+  #example
+  #Name   = "Results/nmkb100.1/17.5e.json"
+  #inFile = "../../test_90_species/Results/truePar_100.txt"
+  n     = as.numeric(str_extract(basename(Name), "[^.]+"))
+  trueP = read.table(inFile, header=T, sep="")
+  tP    = unlist(trueP[n,])
+
+  #True parameters, unnormalized
+  Pi    = tP[1:4]
+  Sigma = tP[5:10]
+  Tau   = tP[11]
+  omega = tP[12]
+
+  #61 or 64?
+  num_dim = '61'
+  num = as.numeric(num_dim)
+  print(num)
+
+  #>codon strs
+  cdc = codon_call(num)
+  cod = cdc[[1]]
+  codonstrs = cdc[[2]]
+  syn = cdc[[3]]
+
+  #>
+  gtr = GTR(Sigma,Pi)
+
+  #>
+  mg94 = MG94(gtr,omega,cod,codonstrs,syn,num)
+
+  #>
+  omega.id = omega_coor(cod, codonstrs, syn, num)
+  sigma.id = sigma_coor(cod, num)
+
+  ##generate pmat
+  Pi2 = sapply(seq(num), function(x){prod(Pi[match(cod[x, ], DNA_BASES)])})
+  Pi2 = Pi2/sum(Pi2)
+
+  o   = outer(sqrt(Pi2),1/sqrt(Pi2))
+  s94 = mg94*o                            #symmetric matrix
+  p94 = expm(s94)*t(o)
+  P94 = p94*Pi2
+  print(sum(P94))
+
+
+  #>simualte data
+  set.seed(8088)
+  dat = pseudo_data(1e+5,P94,num)
+
+  #>
+  nuc_codon_freq = init_f(cod,dat,num)
+  f0  = nuc_codon_freq[[1]]
+  cf0 = nuc_codon_freq[[2]]
+  print(sum(f0))
+  print(sum(cf0))
+
+  #test if sim.LL<emp.LL
+  ll.sim = sum(log(expm(mg94)*Pi2)*dat)
+  ll.emp = LL(cod,codonstrs,syn,c(Sigma,omega),f0,cf0,dat,num)
+  if(ll.sim<ll.emp){
+    print("Yes!")
+  }else{
+    print("come on man!")
+  }
+
+  #>
+  s = init_sigma(syn,dat)
+  w = init_omega(cod,codonstrs,syn,dat,f0,s,omega.id,num)
+
+  #running SQUAREM
+  num      <<- num
+  cod      <<- cod
+  codonstrs<<- codonstrs
+  syn      <<- syn
+  f0       <<- f0
+  cf0      <<- cf0
+  dat      <<- dat
+  omega.id <<- omega.id
+  sigma.id <<- sigma.id
+
+
+  p0   = c(s,w)
+  if(any(p0>1)){
+    len = length(which(p0>1))
+    p0[which(p0>1)] = runif(len)
+  }
+  tm = system.time({
+    pb = nmkb::nmkb(fn=LL_min, par=p0, lower=0.0, upper=2.5, control=list(tol=1e-4,trace=TRUE))
+  })
+
+  # tm2 = system.time({
+  #   pb = dfoptim::nmkb(fn=LL, par=p0, lower=0.0, upper=2.5, control=list(tol=1e-4,trace=TRUE))
+  # })
+
+  # print(tm)
+  # print(pb$message)
+  # print(pb$par)
+
+  rmat = GTR(pb$par[1:6],f0)
+  tv   = -sum(diag(rmat)*f0)
+
+  pb$par = c(pb$par,tv,f0)
+  pj     = toJSON(pb)
+
+  write(pj,Name)
+
+}
+
+#########################
+args = commandArgs(trailingOnly=T)
+main(args[1],args[2])
+
+
+

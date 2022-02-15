@@ -1,0 +1,3 @@
+setwd("~/Dropbox (ASU)/Indel_project/Script")
+
+devtools::load_all(path="~/Dropbox (ASU)/Indel_project/Script/90/nmkb")

@@ -1,0 +1,92 @@
+library(expm)
+library(stats)
+
+
+setwd("~/Dropbox (ASU)/ZIQI_github/EMziqi")
+###################function setup
+# Set up 4*4 GTR matrix
+GTR = function(si, pai){
+  r1 = matrix(0, 4, 4)
+  r1[lower.tri(r1)] = si
+  r  = r1 + t(r1)
+  r  = t(r*pai)
+  diag(r) = -rowSums(r)
+  return(r)
+}
+
+# Construct a 64*64 MG94 matrix
+MG94 = function(g, oga, cd, m){
+  R  = matrix(0, m, m)
+  for (i in 1:m) {
+    for (j in 1:m) {
+      if(i == j){
+        R[i, j] = 0
+      }else if(sum(cd[i, ] != cd[j, ]) > 1){#more than 1 nucleotide changes
+        R[i, j] = 0
+      }else{
+        if(codonstrs[j] %in% syn[[codonstrs[i]]]){#syn_subs
+          w = 1
+        }else{#nonsyn_subs
+          w = oga
+        }
+        pos = which(cd[i, ] != cd[j, ])
+        x   = which(DNA_BASES == cd[i, pos])
+        y   = which(DNA_BASES == cd[j, pos])
+        R[i, j] = w * g[x, y]
+      }
+    }
+  }
+  diag(R) = -rowSums(R)
+
+  return(R)
+}
+
+
+set.seed(8088)
+#######################PART I: parameter space set up
+##pi
+##2(A+C)=1; highC-G or highA-T case.
+nd  = 1
+PiA = runif(nd,0.0,0.50)
+PiT = PiA
+PiC = 0.50 - PiA
+PiG = PiC
+
+
+##omega
+w = runif(nd,0.02,1)
+
+##six sigmas
+##set up the mean rate first; then b =1/a ; 1-sigma rule
+##cv = 1; a = 1/(cv^2)
+
+##distance Tau
+#Tau = runif(nd,0.05,5.5)  #(put 80% of the simulations in the area of saturated third-positions, seems too unreal!!)
+#we setup the a*b=0.4
+cv = 1
+a  = 1/(cv^2)
+b  = 0.4/a
+pai = c(PiA,PiC,PiG,PiT)
+si  = rgamma(6, shape=a, scale=b)
+gtr = GTR(si, pai)
+tau = -sum(diag(gtr)*pai)
+
+#print its value
+cat(sprintf("A:%.6f, C:%.6f, G:%.6f, T:%.6f, A>C:%.6f, A>G:%.6f ,A>T:%.6f, C>G:%.6f, C>T:%.6f, G>T:%.6f, omega:%.6f, tau:%.6f",
+            PiA,PiC,PiG,PiT,si[1],si[2],si[3],si[4],si[5],si[6], w, tau))
+
+write.table(tPar,"Results/truePar_100.txt",quote=F,sep="\t",
+            row.names=F)
+
+##output the 100 parameters
+tPar = c(PiA,PiC,PiG,PiT,si,tau,w)
+
+names(tPar)=c('A','C','G','T','s1','s2','s3','s4','s5','s6','tau','omega')
+write.table(tPar,"Results/rand_para.txt",quote=F,sep="\t",
+            row.names=F)
+
+
+
+
+
+

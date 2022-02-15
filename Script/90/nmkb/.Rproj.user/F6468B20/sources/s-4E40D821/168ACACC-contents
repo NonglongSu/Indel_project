@@ -1,0 +1,45 @@
+##Synopsis
+EM-MG94 is demonstration workflow for using the Expectation-Maximization algorithm to train the hidden substituion models **(GTR, EM94)**
+to find the to find maximum-likelihood estimates for model parameters.
+
+##Dependencies
+* [R 4.0 +]  (https://www.r-project.org/) and libraies `Biostrings`, `stringr`, `seqinr`, `R.utils`, `plyr`, `Matrix`, `expm`, `SQUAREM`, `jsonlite`, `matlib`, `ggplot2`, `tidyverse`, `stats`, `dfoptim`, `purrr`
+* [GNU Make] (https://www.gnu.org/software/make/)
+
+##Download
+git clone https://github.com/NonglongSu/EM-mg94.git 
+cd EM-mg94
+
+
+##Usage
+EM-training of the pairwise alignment as default.       (https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm) 
+[NMKB] derivative-free optimization as an alternative.  (https://rdrr.io/cran/dfoptim/man/nmkb.html) 
+```
+Usage: em [OPTIONS] [fasta]
+
+Positionals: fasta file path
+
+Options:
+>Simulation
+-par  --parameters    generate random initial parameters of mg94 models: [piA, piC, piG, piT, \sigma 1, \sigma 2, \sigma 3, \sigma 4, \sigma 5, \sigma 6, \omega]
+-simu-file [11 parameters] [seq length]  
+                      generate a simulated pairwise alignment with a specific length (must be multiple of three)
+-simu-par  [11 parameters]
+                      display all 11 parameter ests with a branch length \tau   
+
+>Real data run
+-gtr                  display the 6 parameter ests of gtr substituon model
+-mg94                 display the 7 parameter ests of mg94 model
+
+>plot real data
+-plot-CI [11 parameters]  
+                      plot the confidence interval of your 7 parameter estimates [\sigma 1, \sigma 2, \sigma 3, \sigma 4, \sigma 5, \sigma 6, \omega]
+                      
+
+
+
+-h, --help            print this help message and exit
+```
+
+
+##sample runs
