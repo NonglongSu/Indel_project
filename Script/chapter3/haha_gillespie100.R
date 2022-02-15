@@ -34,7 +34,6 @@ sim_del = function(s, dnaB, pos, posB, k){
   #AAA ANN NAA
   #--- --- NAA
   if((flag==1) || (runif(1L)<=Wz)){#selection check
-    
     i=0
     while(i<k){
       #AAA --- A-- -AA
@@ -89,18 +88,18 @@ sim_ins = function(s, dnaB, pos, posB, k){
   po   = pos %% 3
   flag = 0
   
-  if(po == 2){#phase1
+  if(po == 2){#phase2
     ref    = paste0(s[pos-1], s[pos], s[pos+1], collapse="")
-    sub1   = paste0(s[pos-1], ins[1], ins[2],   collapse="")
-    sub2   = paste0(ins[k],   s[pos], s[pos+1], collapse="")
+    sub1   = paste0(s[pos-1], s[pos], ins[1],   collapse="")
+    sub2   = paste0(ins[k-1], ins[k], s[pos+1], collapse="")
     sec    = syn[[ref]]
     if(sub1 %in% sec || sub2 %in% sec){
       flag = 1
     }
-  }else if(po == 0){#phase2
-    ref    = paste0(s[pos-2],  s[pos-1], s[pos], collapse = "")
-    sub1   = paste0(s[pos-2],  s[pos-1], ins[1], collapse = "")
-    sub2   = paste0(ins[k-1],  ins[k],   s[pos], collapse = "")
+  }else if(po == 1){#phase1
+    ref    = paste0(s[pos],  s[pos+1], s[pos+2], collapse = "")
+    sub1   = paste0(s[pos],  ins[1],   ins[2],   collapse = "")
+    sub2   = paste0(ins[k],  s[pos+1], s[pos+2], collapse = "")
     sec    = syn[[ref]]
     if(sub1 %in% sec || sub2 %in% sec){
       flag = 1
@@ -111,7 +110,7 @@ sim_ins = function(s, dnaB, pos, posB, k){
   
   #selection check
   if( (flag==1) || (runif(1L)<=Wz) ){
-    newB  = insert(dnaB, posB, ins)
+    newB = append(dnaB,ins,posB)                     
     stamp = 1
   }else{
     newB  = dnaB
@@ -153,7 +152,7 @@ D_onestep = function(r1,ext,dna0){
     #draw geometric dist of indel length  
     k = rgeom(1,1-ext)
     k = 3*(k+1)        
-    if((length(dna)-pos<k) || (k==0)){#delete the end 
+    if(length(dna)-pos<k){#delete the end 
       next
     }
     
@@ -181,10 +180,9 @@ S_onestep = function(r2,gtr,dnaB){
     
     #Poisson waiting time
     total_rate = sum(phase.r[,1])
+    tau = tau + rexp(1,total_rate)
     if((total_rate==0) || (tau>=brlen)){
       break
-    }else{
-      tau = tau + rexp(1,total_rate)
     }
     
     #count number of gaps before current position
@@ -205,12 +203,12 @@ I_onestep= function(r1,ext,dnaB1){
   
   #total rates
   phase.r = matrix(0,length(dnaB1)+1,2)
-  phase   = (seq_along(dnaB1)+2) %% 3 + 1
-  phase.r[1:length(dnaB1),]  = cbind(r1[phase],rep(0,length(phase)))
-  phase.r[which(dnaB1=='-')] = 0
-  phase.r[length(dnaB1)+1,1] = r1[1]
+  phase   = (seq_along(dnaB1)) %% 3 + 1
+  phase.r[1,1] = r1[1]
+  phase.r[2:nrow(phase.r),] = cbind(r1[phase],rep(0,length(phase)))
   #no events should occur again on the deletion box
-  phase.r[which(dnaB1=='-')] = 0
+  phase.r[which(dnaB1=='-')+1] = 0
+  
   
   for (iter in 1:500) {
     #sample position and mutation types
@@ -218,34 +216,39 @@ I_onestep= function(r1,ext,dnaB1){
     
     #Poisson waiting time
     total_rate = sum(phase.r[,1])
+    tau = tau + rexp(1,total_rate)
     if((total_rate==0) || (tau>=brlen)){
       break
-    }else{
-      tau = tau + rexp(1,total_rate)
     }
     
     #draw geometric dist of indel length
     k = rgeom(1,1-ext)
-    k = 3*(k)
-    if(k==0){next}
+    k = 3*(k+1)
     
     #count number of gaps before current position
-    ngap = length(which(phase.r[(1:Pos),1]==0))
+    posB = Pos - 1
+    if(posB == 0){#immortal link
+      ins      = sample(DNA_BASES,k,prob=Pi,replace=TRUE)
+      dnaB1    = append(dnaB1,ins,posB) 
+      Isinsert = 1
+    }else{
+      ngap     = length(which(phase.r[(1:posB),1]==0))
+      #update dna
+      dna      = dnaB1[which(dnaB1!='-')]
+      pos      = posB-ngap
+      dnaBs    = sim_ins(dna, dnaB1, pos, posB, k)
+      dnaB1    = dnaBs[[1]]
+      Isinsert = dnaBs[[2]]
+    }
     
-    #update dna
-    dna  = dnaB1[which(dnaB1!='-')]
-    pos  = Pos-ngap
-    
-    dnaBs = sim_ins(dna, dnaB1, pos, Pos, k)
-    dnaB1 = dnaBs[[1]]
-    if(dnaBs[[2]]==1){
-      Bi = insert(phase.r[,2],Pos,rep(1,k))
+    if(Isinsert==1){
+      Bi = append(phase.r[,2],rep(1,k),Pos)     
       if(Pos %% 3 == 1){#phase0
-        Rate = insert(phase.r[,1],Pos,rep(r1,k/3))
+        Rate = append(phase.r[,1],rep(r1[c(2,3,1)],k/3),Pos)
       }else if(Pos %% 3 == 2){#phase1
-        Rate = insert(phase.r[,1],Pos,rep(r1[c(2,3,1)],k/3))
+        Rate = append(phase.r[,1],rep(r1[c(3,1,2)],k/3),Pos)
       }else{#phase2
-        Rate = insert(phase.r[,1],Pos,rep(r1[c(3,1,2)],k/3))
+        Rate = append(phase.r[,1],rep(r1,k/3),Pos)
       }
       phase.r = cbind(Rate,Bi)
     }
@@ -262,15 +265,17 @@ I_onestep= function(r1,ext,dnaB1){
 #Align it back
 align_back = function(dna0,dnaB2){
   A   = dna0
+  A   = insert(A,1,'#')
   B   = dnaB2[[1]]
-  bi  = dnaB2[[2]][1:length(B),2]
+  bi  = dnaB2[[2]][,2]
   
   bipos = which(bi==1)
   if(length(bipos)!=0){
     for(i in 1:length(bipos)){
-      A = append(A,'-',bipos[i]-1)
+      A = append(A,'-',bipos[i]-1)  
     }
   }
+  A = A[-1]
   if(length(A)!=length(B)){
     print("Warning: someting wrong with the back alignment!")
   }
@@ -284,16 +289,14 @@ align_back = function(dna0,dnaB2){
 
 
 #setwd("~/Dropbox (ASU)/Indel_project/chapter3")
+#setwd("~/Dropbox (ASU)/Indel_project/chapter4")
 #######################################################
-#ouDir = "haha/"
 main = function(ouD,inF,l,omega_z,ss){
   
-  Wz  <<- as.numeric(omega_z)  #znzs: omega_z=1 (default)
-  
   #read input
-  #ouD = "Gs/100"
+  #ouD = "Gs/98"
   #inF = "trueP.100.txt"
-  cmd = paste0("rm -r ", ouD, " &&"," mkdir -p ",ouD, sep=' ')
+  cmd = paste0("mkdir -p ",ouD, sep=' ')
   system(cmd)
   
   tag = as.numeric(str_extract(basename(ouD), "[^.]+"))
@@ -304,8 +307,13 @@ main = function(ouD,inF,l,omega_z,ss){
   Sigma <<- tp[5:10]
   W     <<- tp[11]
   brlen <<- tp[12]
-  r1     = tp[16:18]
-  ext    = tp[20]
+  r1     = tp[13:15]/(2*brlen)
+  ext    = tp[16:17]
+  
+  
+  
+  omegaz = as.numeric(omega_z)  #znzs: omega_z=1 (default)
+  Wz     <<- 1
   
   
   # construct codons and its degeneracy
@@ -344,9 +352,9 @@ main = function(ouD,inF,l,omega_z,ss){
   sim.IDS = list()
   ssize   = as.numeric(ss)
   for(i in 1:ssize){
-    dnaB  = D_onestep(r1,ext,dna0)
+    dnaB  = D_onestep(r1,ext[2],dna0)
     dnaB1 = S_onestep(r2,gtr,dnaB)
-    dnaB2 = I_onestep(r1,ext,dnaB1)
+    dnaB2 = I_onestep(r1,ext[1],dnaB1)
     Align = align_back(dna0,dnaB2)
     
     names(Align) = c('Seq1','Seq2')

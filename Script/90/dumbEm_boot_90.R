@@ -352,9 +352,14 @@ main = function(Name, inD, inD1){
     f0   = res[[1]]
     cf0  = res[[2]]
     
-    ps4b = fpiter(par=p0, f0=f0,cf0=cf0, datb=datb, fixptfn=em, 
-                  control=list(tol=1e-4, trace=TRUE, intermed=TRUE))
-  
+    # ps4b = fpiter(par=p0, f0=f0, cf0=cf0, datb=datb, fixptfn=em, 
+    #               control=list(tol=1e-4, trace=TRUE, intermed=TRUE))
+    #deal with bigger tau.
+    tm4    = system.time({
+      ps4b = squarem(par=p0, f0=f0, cf0=cf0, datb=datb, fixptfn=em, control=list(tol=1e-4, trace=TRUE, intermed=TRUE))
+    })
+    
+    
     ps4B = jsonwrite(ps4b, f0, cf0, datb)
     write(ps4B,fname) 
   }
@@ -366,10 +371,7 @@ main = function(Name, inD, inD1){
   # cf0      <<- cf0
   # datb     <<- datb
 
-  #deal with bigger tau.
-  # tm4    = system.time({
-  #   ps4b = squarem(par=p0, fixptfn=em, control=list(tol=1e-4, trace=TRUE, intermed=TRUE))
-  # })
+  
   
   
 }
