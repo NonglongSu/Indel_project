@@ -24,7 +24,7 @@ PiC = 0.50 - PiA
 PiG = PiC
 Pi.all = list(PiA, PiC, PiG, PiT)
 Pi.all = sapply(1:nd, function(x){sapply(Pi.all, "[[", x)})
-print(colSums(Pi.all)) 
+#print(colSums(Pi.all)) 
 
 
 #set up omega from zhou's paper
@@ -44,8 +44,7 @@ for (i in 1:nd) {
   Sigmas[,i] = si 
   tv[i]      = -sum(diag(gtr)*pai)
 }
-
-summary(tv)
+#summary(tv)
 #hist(tv, prob = TRUE, xlim = c(0,2))
 #stv = sort(tv)
 #lines(stv,dgamma(stv,shape=a,scale=b),col='magenta',lwd=2,lty='dotted')
@@ -54,7 +53,7 @@ summary(tv)
 
 #normalize sigma. 
 norm.Sig = sapply(1:nd, function(x){Sigmas[,x]/tv[x]})
-print(norm.Sig)
+#print(norm.Sig)
 
 #set up the indel rate ([12,16]/100)
 #assume P_ins = P_del
@@ -84,10 +83,11 @@ for (i in 1:nd) {
   tPar[i,5:10] = norm.Sig[,i]
   tPar[i,11]   = wv[i]
   tPar[i,12]   = tv[i]
-  tPar[i,13:15]= rt[i,]
-  tPar[i,16:17]= ext[i,]
+  tPar[i,13:14]= ext[i,]
+  tPar[i,15:17]= rt[i,]
+  
 }
-colnames(tPar)=c('A','C','G','T','s1','s2','s3','s4','s5','s6','omega','tau','r0*t','r1*t','r2*t','ext.I','ext.D')
+colnames(tPar)=c('A','C','G','T','s1','s2','s3','s4','s5','s6','omega','tau','ext.I','ext.D','r0*t','r1*t','r2*t')
 write.table(tPar,"trueP.100.txt",quote=F,sep="\t",
             row.names=F)
 

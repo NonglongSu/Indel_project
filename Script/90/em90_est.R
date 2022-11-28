@@ -1,5 +1,4 @@
 #Data analysis of real species(90)
-#setwd("~/Dropbox (ASU)/Indel_project/Script/90")
 
 suppressPackageStartupMessages(library(stats))
 suppressPackageStartupMessages(library(jsonlite))
@@ -7,10 +6,11 @@ suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(ggplot2))
 suppressPackageStartupMessages(library(ggrepel))
 
+#setwd("~/Dropbox (ASU)/Indel_project/test_90_species")
 
-##>>>est90
-#inD = "../../test_90_species/Results/est90"
 
+#inD  = "Results/est90"
+#ouF1 = "Figure/EM/est90.pdf"
 main = function(inD, ouF1, ouF2){
   Files = list.files(inD, full.names=TRUE)
   
@@ -30,31 +30,31 @@ main = function(inD, ouF1, ouF2){
   dF = as.data.frame(as.table(dMat))
   colnames(dF) = c('haha','paras','value')
   ggplot(dF, aes(x=paras, y=value)) + geom_boxplot()
-  dF_sorted = dF %>% mutate(paras = fct_reorder(paras,-value))
-  ggplot(dF_sorted, aes(x=paras, y=value)) + geom_boxplot()
+  #dF_sorted = dF %>% mutate(paras = fct_reorder(paras,-value))
+  #ggplot(dF_sorted, aes(x=paras, y=value)) + geom_boxplot()
   
   #>flip he boxplot
-  ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_boxplot() + coord_flip() 
- 
-  #>violin plot
-  ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_violin() + coord_flip()
-  
-  #>lineplot
-  ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_line(size=1) + coord_flip()
-   
-  #>Dot strip plot
-  ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_point(size=2, alpha=0.6) + coord_flip()
-  
-  
-  #create basic g
-  gs = ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + coord_flip()
+  # ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_boxplot() + coord_flip() 
+  # 
+  # #>violin plot
+  # ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_violin() + coord_flip()
+  # 
+  # #>lineplot
+  # ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_line(size=1) + coord_flip()
+  #  
+  # #>Dot strip plot
+  # ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_point(size=2, alpha=0.6) + coord_flip()
   
   #>boxplot(median)+dotplot
-  ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_boxplot() + coord_flip()
+  #ggplot(dF_sorted, aes(x=paras,y=value,color=paras)) + geom_boxplot() + coord_flip()
   
+  para = c(bquote(sigma*1),bquote(sigma*2),bquote(sigma*3),bquote(sigma*4),bquote(sigma*5),bquote(sigma*6),bquote(omega),bquote(tau))
   pdf(ouF1)
-  plot1 = gs + geom_boxplot(outlier.alpha=0) + geom_point(size=2, alpha=0.6) 
-  print(plot1)
+  gs    = ggplot(dF, aes(x=paras,y=value,color=paras)) + coord_flip() 
+  plot1 = gs + geom_boxplot(outlier.alpha=0) + geom_point(size=2, alpha=0.6) + xlab("parameters") 
+                                                                                                          
+  plot2 = plot1 + scale_x_discrete(labels=para) + scale_color_hue(labels=para) 
+  print(plot2)
   dev.off()
   
   #>hightlight the mean
@@ -63,15 +63,13 @@ main = function(inD, ouF1, ouF2){
   
   
   #>>>>>>>>>>>w vs tau
-  df2  = data.frame(omega=dMat[,7], tau=dMat[,8])
-  # plot(omega~tau, data=df2, col="#CC79A7", pch=19)
-  # text(omega~tau, data=df2, labels=rownames(df2), font=0.5)
-
-  pdf(ouF2)
-  plot2 = ggplot(df2, aes(x=tau, y=omega)) + geom_point(alpha=0.6, col="#56B4E9") + 
-                                             geom_text_repel(label=rownames(df2), size=2.5)
-  print(plot2)
-  dev.off()
+# df2  = data.frame(omega=dMat[,7], tau=dMat[,8])
+# 
+# pdf(ouF2)
+# plot2 = ggplot(df2, aes(x=tau, y=omega)) + geom_point(alpha=0.6, col="#56B4E9") + 
+#                                             geom_text_repel(label=rownames(df2), size=2.5)
+# print(plot2)
+# dev.off()
   
   ##
   # plot(dMat[,7]~dMat[,8], xlab='tau',ylab='omega')

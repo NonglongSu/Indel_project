@@ -1,3 +1,5 @@
+#measure how much loss of data from after concatenation.
+
 library(Biostrings)
 library(jsonlite)
 library(stringr)
@@ -35,7 +37,7 @@ countL = function(f){
 main = function(inD1,inD2,inD3,ouF){
   File1 = list.files(inD1, full.names=T)
   File2 = list.files(inD2, full.names=T)
-  
+
   seqM  = matrix(0,90,2)
   sname = str_extract(basename(File1), "[^.]+")
   tname = basename(File2)
@@ -71,7 +73,7 @@ for(i in 1:length(File3)){
 
 pdf(ouF)
 df  = data.frame(tau=tv, perc=fperc)
-lof = ggplot(df, aes(x=tau, y=perc)) + geom_point(alpha=0.6, col="#56B4E9") + 
+lof = ggplot(df, aes(x=tau, y=perc)) + geom_point(alpha=0.6, col="#56B4E9") +
   geom_text_repel(label=rownames(df), size=2.5)
 print(lof)
 dev.off()

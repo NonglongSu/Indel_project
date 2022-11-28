@@ -1,14 +1,14 @@
 # Update the gaps 
-suppressPackageStartupMessages(library(tidyverse))
+suppressWarnings(suppressMessages(library(tidyverse)))
+suppressWarnings(suppressMessages(library(dplyr)))
 suppressPackageStartupMessages(library(Biostrings))
 suppressPackageStartupMessages(library(BiocGenerics))
 suppressPackageStartupMessages(library(parallel))
 suppressPackageStartupMessages(library(S4Vectors))
 suppressPackageStartupMessages(library(seqinr))
-suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(stringi))
 
-#setwd("~/Dropbox (ASU)/Indel_project/Script")
+#setwd("~/Dropbox (ASU)/Indel_project/test_human_mouse_rat/Data_6")
 
 # Initial word size (Window) as 27(6+3+6). 
 # convert ---AAA/AAA--- to ===AAA/AAA===
@@ -83,55 +83,52 @@ ad_gap_dis = function(y, seq, ref){
 # seq1 = "AAT---AAACAAAGAATGCTTACTGT---ATAAGGCTTACTGTTCTAGCG---ATCACCGCG---TCATGTCTAGTTATGAACGGC------GGTTTAACATTGAATAGCAAGGCACTTCCATAATAGGGCCGTC---GTAATTGTCTAATATAG------ATAGTA---"
 # seq2 = "TAA------AA---AATTTGATGCTACATTGGATGAGTCTACTTCGAGCGCGCCGCATCGATTGCAAGAGCAGTGTTGCCT---AAGAGCCGTTAGATGCGTCGTTG---ATCGCGTCCGATAATTCGGGAGTTG---CCCAATATTTAATATGATGA---TAGCTATAA"
 
+# inFile = "../Raw_data/pair_mafft/ENSG00000000460.fa"
+# oudir  = "Mafft/updated_cds/"
+# num1   = '6'; num2 = '12'
 
-# inFile = "../test_human_mouse_rat/Raw_data/mapped_cds/ENSG00000000460.fa"
-# oudir  ="../test_human_mouse_rat/Data_6/Mafft/updated_cds/"
-# num1 = '6' ; num2 = "12"
-
-main = function(inFile, ouDir, num1, num2){
+main = function(inFile,ouDir,num1,num2){
  
-  dna = readDNAStringSet(inFile, format = "fasta")
+  dna = readDNAStringSet(inFile)
   name = names(dna)
   
-  # Set up vars
+  #Set up vars
   num1 = as.numeric(num1)
   num2 = as.numeric(num2)
   Window  <<- num1
-  Wall <<- num2
+  Wall    <<- num2
   
-  # String mode
-  spec.ref = toString(dna[[1]])
-  spec.1   = toString(dna[[2]])
-  spec.2   = toString(dna[[3]])
+  #String mode
+  spec.1   = toString(dna[[1]])
+  spec.2   = toString(dna[[2]])
   
-  # Find gap range
+  #Find gap range
   dna.1 = str_split(as.character(dna), '')
   g     = lapply(dna.1, function(x) { IRanges(x == '-')})
   g     = IRangesList(g)
-  
-  m = g[[2]]
-  r = g[[3]]
+  m     = g[[1]]
+  r     = g[[2]]
   
   wid.m = width(m)
   wid.r = width(r)
   
-  # Test gap range
-  gap = c(3, 6, 9, 12)
+  #Test gap range
+  gap = c(3,6,9,12)
   m.null = m[!(wid.m %in% gap)]
   r.null = r[!(wid.r %in% gap)]
   
   ########################################PART II
-  M = filter_Long(m.null, spec.1)
-  R = filter_Long(r.null, spec.2)  
+  M = filter_Long(m.null,spec.1)
+  R = filter_Long(r.null,spec.2)  
  
-  # Clean up of start-end region of the seq
+  #Clean up of start-end region of the seq
   M.1 = start_stop_test(M)
   R.1 = start_stop_test(R)
   
   
-  # Update old gap length 
-  M.2 = str_split(as.character(M.1), '')
-  R.2 = str_split(as.character(R.1), '')
+  #Update old gap length 
+  M.2 = str_split(as.character(M.1),'')
+  R.2 = str_split(as.character(R.1),'')
   
   g.m = lapply(M.2, function(x) { IRanges(x == '-')})
   g.r = lapply(R.2, function(x) { IRanges(x == '-')})
@@ -139,29 +136,29 @@ main = function(inFile, ouDir, num1, num2){
   g.m = IRangesList(g.m)[[1]]
   g.r = IRangesList(g.r)[[1]]
   
-  # Update the gap via swapping reference
+  #Update the gap via swapping reference
   m.all = g.m[width(g.m)==3 | width(g.m)==6 | width(g.m)==9 | width(g.m)==12 ]
   r.all = g.r[width(g.r)==3 | width(g.r)==6 | width(g.r)==9 | width(g.r)==12 ]
   
   M_R = ad_gap_dis(m.all, M.1, R.1)
   R_M = ad_gap_dis(r.all, M_R[2], M_R[1])
   
-  # Update the focal-seq
-  new.M = R_M[2]
-  new.R = R_M[1]
+  #Update the focal-seq
+  new.M   = R_M[2]
+  new.R   = R_M[1]
+  new_seq = list(new.M,new.R)
   
-  new_seq = list(spec.ref, new.M, new.R)
+  write.fasta(sequences=new_seq, names=name, nbchar=80,
+              open="w", as.string=TRUE, file.out=paste0(ouDir,basename(inFile)))
   
-  write.fasta(sequences = new_seq, names = name, nbchar = 80,
-              open = "w", as.string = TRUE, file.out = paste0(ouDir, basename(inFile)) )
-  print("haha")
 }
 
+
+###############################################
 #compatible with run_test.R
-args = commandArgs(trailingOnly = TRUE)
+args = commandArgs(trailingOnly=T)
 if(!interactive()){
  main(args[1], args[2], args[3], args[4])
 }
 
-###############################################
 

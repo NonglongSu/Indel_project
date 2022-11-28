@@ -69,19 +69,17 @@ main = function(inD, inF, ouD, ouF){
     tv = c(tv,pm90[,8,k])
   }
   
-  #>>
-  #plot(wv~tv, xlab='tau', ylab='omega')
-  
+  para = c(bquote(tau),bquote(omega))  
   #>>
   pdf(ouF)
-  
   df     = data.frame(omega=wv,tau=tv, num1=1:900, num2=rep(1:900, each=10, length.out=900))
   df$col = rep(1:6, each=10, length.out=900) 
   g = ggplot(df, aes(x=tau, y=omega, col=as.factor(col))) 
   plot0 = g + geom_point(size=2, alpha=0.5, shape=1, show.legend=F) + 
               geom_text_repel(aes(label=ifelse(num1%%10==0, num2, '')), col="#000000", size=2.5)
-    
-  print(plot0)
+  
+  plot1 = plot0 + xlab(para[[1]]) + ylab(para[[2]])
+  print(plot1)
   dev.off()
   
   

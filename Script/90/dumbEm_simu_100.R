@@ -1,4 +1,4 @@
-#Generate the rms data for 100 sample size.
+#Generate 100 simulation data from the Phylo-EM method
 suppressWarnings(library(matlib))
 suppressPackageStartupMessages(library(Biostrings))
 suppressPackageStartupMessages(library(stringr))
@@ -158,9 +158,8 @@ em = function(p){
   return(pNew)
 }
 
+
 #############################################################Part II Model building
-
-
 main = function(Name, inFile){
   #Construct codons and its degeneracy
   stp = c(49,51,57)
@@ -179,7 +178,6 @@ main = function(Name, inFile){
   syn <<- syn
 
 
-
   #indicators
   #Name   = "Results/est100/1.5e.json"
   #inFile = "../test_90_species/Results/truePar_100.txt"
@@ -187,7 +185,6 @@ main = function(Name, inFile){
   trueP = read.table(inFile, header=T, sep="")
   tP    = unlist(trueP[n,])
   pow   = as.numeric(gsub(".*[.]([^.]+)[e].*", "\\1", Name))
-
 
   #True parameters, unnormalized
   Pi    = tP[1:4]
@@ -200,7 +197,6 @@ main = function(Name, inFile){
   #print(-sum(diag(gtr)*Pi))
   mg94 = MG94(gtr, omega, cod)
 
-
   #Set up mg94 matrix and normalize it.
   Pi2 = sapply(seq(61), function(x){prod(Pi[match(cod[x, ], DNA_BASES)])})
   Pi2 = Pi2/sum(Pi2)
@@ -210,7 +206,6 @@ main = function(Name, inFile){
   o   = outer(sqrt(Pi2), 1/sqrt(Pi2))
   s94 = mg94 * o
   #print(s94[1, ])
-  #print(s94[, 1])
 
   p94 = expm(s94)* t(o)
   P94 = p94* Pi2
@@ -219,7 +214,6 @@ main = function(Name, inFile){
 
   #Normlize sigma as well
   #Sigma = Sigma/T
-
 
   #Build omega list for M-step.
   ##Locating all non-syn locations in 64*64 R matrix.
@@ -271,8 +265,7 @@ main = function(Name, inFile){
   for (i in 1:length(id1)) {
     dat1[id1[i]] = id2[i]
   }
-  #dat1 = 10000 * P94 >>>>>>>>>>>>>>>>>>
-
+  
 
   ##empirical f
   f1     = rowSums(dat1) + colSums(dat1)
@@ -285,27 +278,23 @@ main = function(Name, inFile){
   f  = base.f/sum(base.f)
   #print(sum(f))
 
-  #em to obtain the est of f0
+  ##em to obtain the est of f0
   f0=f
   sum_61 = sum(f1)
   for (i in 1:20) {
-    Pi_stp = c(f0[1]^2*f0[4],f0[1]*f0[3]*f0[4],f0[3]*f0[1]*f0[4])
-    Pi_61  = 1 - sum(Pi_stp)
-
+    Pi_stp   = c(f0[1]^2*f0[4],f0[1]*f0[3]*f0[4],f0[3]*f0[1]*f0[4])
+    Pi_61    = 1 - sum(Pi_stp)
     sum_stp  = sum_61/Pi_61 - sum_61
     stp_norm = Pi_stp/sum(Pi_stp) *sum_stp
-
-    #print the ll
     cf0 = sapply(seq(61), function(x){prod(f0[match(cod[x, ], DNA_BASES)])})
     ll  = sum(f1*log(cf0))- sum_61*log(Pi_61)
     #cat(sprintf("%i: %.6f\n", i, ll))
 
     denom = 3*(sum_61+sum_stp)
-
-    f0 = c(base.f[1]+2*stp_norm[1]+stp_norm[2]+stp_norm[3],
-           base.f[2],
-           base.f[3]+stp_norm[2]+stp_norm[3],
-           base.f[4]+sum_stp)/denom
+    f0    = c(base.f[1]+2*stp_norm[1]+stp_norm[2]+stp_norm[3],
+            base.f[2],
+            base.f[3]+stp_norm[2]+stp_norm[3],
+            base.f[4]+sum_stp)/denom
     #print(sum(f0))
   }
 
@@ -325,7 +314,7 @@ main = function(Name, inFile){
     print("come on man!")
   }
 
-  #init sigma
+  ##init sigma
   #create nuc transition matrix [4-fold-degeneracy-codons only]
   fourD_id = which(sapply(syn, function(x){length(x) == 4}))
   k=1
@@ -335,7 +324,7 @@ main = function(Name, inFile){
     ndat = ndat+dat1[i,j]
     k=k+4
   }
-  fn = rowSums(ndat) + colSums(ndat)        #neutral freq
+  fn = rowSums(ndat) + colSums(ndat)  #neutral freq
   fn = fn/sum(fn)
   #print(sum(fn))
 
@@ -357,7 +346,6 @@ main = function(Name, inFile){
   #print(Ahat)
   s  = Ahat[lower.tri(t(Ahat))]
 
-  #>>
   if(any(s<0)){
     cat(sprintf("neg-s0:  %i\n",n))
     s = runif(6)
@@ -380,14 +368,14 @@ main = function(Name, inFile){
   }
   w = obs.non/(exp.non/2)
 
-  #init p >>>>>>>>>>>>>>>>>>>>
+  
+  #init para >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   #setup global
   f0       <<- f0
   cf0      <<- cf0
   dat1     <<- dat1
   omega.id <<- omega.id
   sigma.id <<- sigma.id
-
 
   p0   = c(s,w)
   p0   = runif(7)
@@ -409,12 +397,10 @@ main = function(Name, inFile){
 
   #output
   write(ps4B,Name)
-  #write(ps4B,"../test_90_species/Results/1.5e.dumbEM.json")
-
 }
 
 ###########
-args = commandArgs(trailingOnly = TRUE)
+args = commandArgs(trailingOnly=TRUE)
 main(args[1],args[2])
 
 

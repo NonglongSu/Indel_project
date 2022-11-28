@@ -1,17 +1,17 @@
 # Slide the gaps and find the best hit. 
+suppressWarnings(suppressMessages(library(tidyverse)))
 suppressPackageStartupMessages(library(Biostrings))
 suppressPackageStartupMessages(library(BiocGenerics))
 suppressPackageStartupMessages(library(parallel))
 suppressPackageStartupMessages(library(S4Vectors))
-suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(seqinr))
 suppressPackageStartupMessages(library(stringi))
 suppressPackageStartupMessages(library(stringr))
 
-# setwd("~/Dropbox (ASU)/Indel_project/Script/90")
+#setwd("~/Dropbox (ASU)/Indel_project/Script/90")
 
-# Hamming distance
+#Matches
 Align = function(u, v){
   u = str_split(u, "")
   v = str_split(v, "")
@@ -25,28 +25,28 @@ Align = function(u, v){
   return (sim)
 }
 
-# left_sliding
+#left_sliding
 left_slide = function(seq_v, index, wid){
   swap(seq_v[index - 1], seq_v[index + wid - 1])
   seq   = paste(seq_v, collapse = "")
   return (seq)
 }
 
-# right_sliding
+#right_sliding
 right_slide = function(seq_v, index, wid){
   swap(seq_v[index], seq_v[index + wid])
   seq   = paste(seq_v, collapse = "")
   return (seq)
 }
 
-# Convert string to vector
+#Convert string to vector
 str_convert = function(s){
   s1 = str_split(s, "")
   s1 = s1[[1]]
   return(s1)
 }
 
-# Generate the pseudo seq with an optimal alignment
+#Generate the pseudo seq with an optimal alignment
 Merge = function(idx, wid, x, y){
   #assume current state is the optimal state
   best_aligned = x             
@@ -101,20 +101,16 @@ Merge = function(idx, wid, x, y){
   return (best_aligned)
 }
 
-# Single fasta analysis
-sw_update = function(inFile, ouFile){
-  if(file.exists(ouFile)){
-    next()
-  }else{
-   print(basename(inFile))
-   dna    = readBStringSet(inFile, format = "fasta")
+#Single fasta analysis
+sw_update = function(inFile,ouFile){
+   dna    = readBStringSet(inFile, format="fasta")
    name   = names(dna)
    spec.1 = toString(dna[[1]])
    spec.2 = toString(dna[[2]])
   
    #capture all gaps of different lengths(3, 6, 9, 12)
-   dna.1 = str_split(as.character(dna), '')
-   g = lapply(dna.1, function(x) { IRanges(x == '-')})
+   dna.1 = str_split(as.character(dna),'')
+   g = lapply(dna.1, function(x) { IRanges(x=='-')})
    g = IRangesList(g)
   
   m     = g[[1]]
@@ -126,18 +122,18 @@ sw_update = function(inFile, ouFile){
   pos.m = start(m)
   pos.r = start(r)
   
-  if((l.m > 0) & (l.r > 0)){
+  if((l.m>0) & (l.r>0)){
     for(i in 1:l.m){
       spec.1 = Merge(pos.m[i], wid.m[i], spec.1, spec.2)
     }
     for(i in 1:l.r){
       spec.2 = Merge(pos.r[i], wid.r[i], spec.2, spec.1)
     }
-  }else if((l.m > 0) & (l.r == 0)){
+  }else if((l.m>0) & (l.r==0)){
     for(i in 1:l.m){
       spec.1 = Merge(pos.m[i], wid.m[i], spec.1, spec.2)
     }
-  }else if((l.m == 0) & (l.r > 0)){
+  }else if((l.m==0) & (l.r>0)){
     for(i in 1:l.r){
       spec.2 = Merge(pos.r[i], wid.r[i], spec.2, spec.1)
     }
@@ -147,49 +143,42 @@ sw_update = function(inFile, ouFile){
   flag = unlist(lapply(c(spec.1, spec.2), function(x){grepl('-', x)}))
   if(any(flag) == TRUE){
     new_seq = list(spec.1, spec.2)
-    write.fasta(sequences = new_seq, names = name, nbchar = 80,
-                open = "w", as.string = TRUE, file.out = ouFile)
+    write.fasta(sequences=new_seq, names=name, nbchar=100,
+                open="w", as.string=TRUE, file.out=ouFile)
   }
- }
-  
 }
 
 #############################################
 
-# Dir   = "../../test_90_species/Data/up_cds"
-# ouD   = "../../test_90_species/Data/sw_cds"
-# num1  = "6" ; num2 = "12"
+# Dir   = "../../test_90_species/Data/up_cds/01_FcaCaf_aligned_cds"
+# ouD   = "../../test_90_species/Data/sw_cds/01_FcaCaf_aligned_cds"
+# num1  = "6" 
+# num2  = "12"
 
-main = function(Dir, ouD, num1, num2){
+main = function(Dir,ouD,num1,num2){
 
-  # Set up a window (global var)
   num1    = as.numeric(num1)
   num2    = as.numeric(num2)
   Window  <<- num1
   Wall    <<- num2
   
   # Read euk- and pro- dirs
-  Euk_Pro = list.files(Dir, full.names = TRUE)
+  Euk_Pro = list.files(Dir,full.names=TRUE)
   
   for (i in 1:length(Euk_Pro)) {
-    dir.create(file.path(ouD, basename(Euk_Pro[i])))
-    Each.sp  = list.files(Euk_Pro[i], full.names = TRUE)
-    subD = paste0(ouD, "/", basename(Euk_Pro[i]))
-    for (j in 1:length(Each.sp)) {
-      output = paste0(subD, "/", basename(Each.sp[j]))
-      if (file.exists(output)){
+      ouF = paste0(ouD, "/", basename(Euk_Pro[i]))
+      if (file.exists(ouF)){
         next()
       }else{
-        sw_update(Each.sp[j], output)
+        sw_update(Euk_Pro[i],ouF)
+        print(i)
       }
-    }
   }
-  
 }
 
 #compatible with run_test.R
  #if(interactive()){
- args = commandArgs(trailingOnly = TRUE)
+ args = commandArgs(trailingOnly=TRUE)
  main(args[1], args[2], args[3], args[4])
  #}
 

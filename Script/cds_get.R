@@ -10,13 +10,11 @@ library(Biostrings)
 library(stringr)
 
 
-# file = "../test_human_mouse_rat/Raw_data_2/geneId.txt"
-# n    = "ENSG00000128815"
-# output   = "../test_human_mouse_rat/Raw_data/cds_seq/"    #make cds
-# output.1 = "../Raw_data.2.outgroups/cds_seq/Tmp1/"        #make cds.1
-# output.2 = "../Raw_data.2.outgroups/cds_seq/Tmp2/"        #make cds.2
+# file  = "../test_human_mouse_rat/Raw_data_2/geneId.txt"
+# n     = "ENSG00000128815"
+# output= "../test_human_mouse_rat/Raw_data/cds_seq/"  
 
-#name="ENSG00000158796"
+########################################3
 main = function(n, file, output){
   
   server = "http://rest.ensembl.org"

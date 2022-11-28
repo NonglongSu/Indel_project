@@ -289,7 +289,6 @@ align_back = function(dna0,dnaB2){
 
 
 #setwd("~/Dropbox (ASU)/Indel_project/chapter3")
-#setwd("~/Dropbox (ASU)/Indel_project/chapter4")
 #######################################################
 main = function(ouD,inF,l,omega_z,ss){
   
@@ -307,10 +306,8 @@ main = function(ouD,inF,l,omega_z,ss){
   Sigma <<- tp[5:10]
   W     <<- tp[11]
   brlen <<- tp[12]
-  r1     = tp[13:15]/(2*brlen)
-  ext    = tp[16:17]
-  
-  
+  ext    = tp[13:14]
+  r1     = tp[15:17]/(2*brlen)
   
   omegaz = as.numeric(omega_z)  #znzs: omega_z=1 (default)
   Wz     <<- 1
@@ -340,7 +337,7 @@ main = function(ouD,inF,l,omega_z,ss){
   r2        = -diag(gtr)
   r2[5]     = 0
   names(r2) = c(DNA_BASES,'-')
-  diag(gtr) = 0                #avoid negative prob.
+  diag(gtr) = 0     #avoid negative prob.
   
   
   #########################################PART II Run simulation
@@ -361,7 +358,6 @@ main = function(ouD,inF,l,omega_z,ss){
     writeXStringSet(Align, paste0(ouD,'/',i,".fa"))
     sim.IDS[[i]] = Align
   }
-  
 }
 
 

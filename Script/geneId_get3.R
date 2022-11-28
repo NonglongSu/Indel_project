@@ -1,7 +1,4 @@
 #extract the gene ID from ensembl API
-
-# rm(list=ls())
-# invisible(dev.off())
 ######################
 # .libPaths()
 # [1] "/home/zzhu49/R/x86_64-pc-linux-gnu-library/3.4"

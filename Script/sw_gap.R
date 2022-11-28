@@ -1,17 +1,17 @@
 # Slide the gaps and find the best hit. 
+suppressWarnings(suppressMessages(library(tidyverse)))
+suppressWarnings(suppressMessages(library(dplyr)))
 suppressPackageStartupMessages(library(Biostrings))
 suppressPackageStartupMessages(library(BiocGenerics))
 suppressPackageStartupMessages(library(parallel))
 suppressPackageStartupMessages(library(S4Vectors))
-suppressPackageStartupMessages(library(tidyverse))
-suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(seqinr))
 suppressPackageStartupMessages(library(stringi))
 suppressPackageStartupMessages(library(stringr))
 
-# setwd("~/Dropbox (ASU)/Indel_project/Script")
+#setwd("~/Dropbox (ASU)/Indel_project/test_human_mouse_rat/Data_6")
 
-# Hamming distance
+#Hamming distance
 Align = function(u, v){
   u = str_split(u, "")
   v = str_split(v, "")
@@ -25,30 +25,30 @@ Align = function(u, v){
   return (sim)
 }
 
-# left_sliding
+#left_sliding
 left_slide = function(seq_v, index, wid){
   swap(seq_v[index - 1], seq_v[index + wid - 1])
   seq   = paste(seq_v, collapse = "")
   return (seq)
 }
 
-# right_sliding
+#right_sliding
 right_slide = function(seq_v, index, wid){
   swap(seq_v[index], seq_v[index + wid])
   seq   = paste(seq_v, collapse = "")
   return (seq)
 }
 
-# Convert string to vector
+#Convert string to vector
 str_convert = function(s){
   s1 = str_split(s, "")
   s1 = s1[[1]]
   return(s1)
 }
 
-# Generate the pseudo seq with an optimal alignment
+#Generate the pseudo seq with an optimal alignment
 Merge = function(idx, wid, x, y){
-  best_aligned = x                         #assume current state is the optimal state. 
+  best_aligned = x                    
   
   # Original window seq
   start = idx - Wall
@@ -107,78 +107,73 @@ Merge = function(idx, wid, x, y){
 # seq1 = "AAT===AAACAAAGAATGCTTACTGT---ATAAGGCTTACTGTTCTAGCG===ATCACCGCG===TCATGTCTAGTTATGAACGGC------GGTTTAACATTGAATAGCAAGGCACTTCCA---TAATAGGGCCGTC===GTAATTGTCTAATATAG------ATAGTA==="
 # seq2 = "TAA------AA===AATTTGATGCTACATTGGATGAGTCTACTTCGAGCGCGCCGCATCGATTGCAAGAGCAGTGTTGCCT===AAGAGCCGTTAGATGCGTCGTTG---ATCGCGTCCGATAATTCGGGAGTTGTGC===CCCAATATTTAATATGATGA===TAGCTATAA"
 
-
-main = function(inFile, ouDir, num1, num2){
-
-dna = readBStringSet(inFile, format = "fasta")
-name = names(dna)
-
-# set up a window (global var)
-num1 = as.numeric(num1)
-num2 = as.numeric(num2)
-Window  <<- num1
-Wall <<- num2
-
-# String mode
-spec.ref = toString(dna[[1]])
-spec.1   = toString(dna[[2]])
-spec.2   = toString(dna[[3]])
-
-#Capture all gaps of different lengths(3,6,9,12)
-dna.1 = str_split(as.character(dna), '')
-g = lapply(dna.1, function(x) { IRanges(x == '-')})
-g = IRangesList(g)
-
-m = g[[2]]
-r = g[[3]]
-
-wid.m = width(m)
-wid.r = width(r)
-
-l.m = length(wid.m)
-l.r = length(wid.r)
-
-pos.m = start(m)
-pos.r = start(r)
-
-
-if((l.m > 0) & (l.r > 0)){
-  for(i in 1:l.m){
-    spec.1 = Merge(pos.m[i], wid.m[i], spec.1, spec.2)
+################################################
+main = function(inFile,ouDir,num1,num2){
+  dna = readBStringSet(inFile)
+  name = names(dna)
+  
+  #Set up var (global var)
+  num1 = as.numeric(num1)
+  num2 = as.numeric(num2)
+  Window  <<- num1
+  Wall    <<- num2
+  
+  #String mode
+  spec.1   = toString(dna[[1]])
+  spec.2   = toString(dna[[2]])
+  
+  #Capture all gaps of different lengths(3,6,9,12)
+  dna.1 = str_split(as.character(dna), '')
+  g     = lapply(dna.1, function(x) { IRanges(x == '-')})
+  g     = IRangesList(g)
+  m     = g[[1]]
+  r     = g[[2]]
+  
+  wid.m = width(m)
+  wid.r = width(r)
+  l.m   = length(wid.m)
+  l.r   = length(wid.r)
+  pos.m = start(m)
+  pos.r = start(r)
+  
+  
+  if((l.m > 0) & (l.r > 0)){
+    for(i in 1:l.m){
+      spec.1 = Merge(pos.m[i], wid.m[i], spec.1, spec.2)
+    }
+    for(i in 1:l.r){
+      spec.2 = Merge(pos.r[i], wid.r[i], spec.2, spec.1)
+    }
+  }else if((l.m > 0) & (l.r == 0)){
+    for(i in 1:l.m){
+      spec.1 = Merge(pos.m[i], wid.m[i], spec.1, spec.2)
+    }
+  }else if((l.m == 0) & (l.r > 0)){
+    for(i in 1:l.r){
+      spec.2 = Merge(pos.r[i], wid.r[i], spec.2, spec.1)
+    }
+  }else{
+    quit()
   }
-  for(i in 1:l.r){
-    spec.2 = Merge(pos.r[i], wid.r[i], spec.2, spec.1)
+  
+  #Filter out the seq with '+++' only.
+  flag = unlist(lapply(c(spec.1, spec.2), function(x){grepl('-', x)}))
+  if(any(flag)==TRUE){
+    new_seq = list(spec.1, spec.2)
+    write.fasta(sequences=new_seq, names=name, nbchar=80,
+                open="w", as.string = TRUE, file.out=paste0(ouDir, basename(inFile)) )
+  }else{
+    quit()
   }
-}else if((l.m > 0) & (l.r == 0)){
-  for(i in 1:l.m){
-    spec.1 = Merge(pos.m[i], wid.m[i], spec.1, spec.2)
-  }
-}else if((l.m == 0) & (l.r > 0)){
-  for(i in 1:l.r){
-    spec.2 = Merge(pos.r[i], wid.r[i], spec.2, spec.1)
-  }
-}else{
-  quit()
 }
 
-# Filter out the seq with '+++' only.
-flag = unlist(lapply(c(spec.1, spec.2), function(x){grepl('-', x)}))
-if(any(flag) == TRUE){
-  new_seq = list(spec.ref, spec.1, spec.2)
-  write.fasta(sequences = new_seq, names = name, nbchar = 80,
-              open = "w", as.string = TRUE, file.out = paste0(ouDir, basename(inFile)) )
-}else{
-  quit()
-}
-
-}
-
+#######################################
 #compatible with run_test.R
-args = commandArgs(trailingOnly = TRUE)
+args = commandArgs(trailingOnly=TRUE)
  if(interactive()){
   main(args[1], args[2], args[3], args[4])
  }
 
-################
+
 
 

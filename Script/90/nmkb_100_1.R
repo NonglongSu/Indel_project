@@ -8,14 +8,13 @@ suppressPackageStartupMessages(library(purrr))
 suppressPackageStartupMessages(library(matlib))
 suppressPackageStartupMessages(library(jsonlite))
 
-#rewrite the tolrence criterion as rms in nmkb package and apply the nmkb method
+#rewrite the tolrence criterion from the nmkb package as as rms then apply the nmkb method
 
 # library(devtools)
 # library(roxygen2)
 # setwd("~/Dropbox (ASU)/Indel_project/Script/90")
 # getwd()
 # devtools::create("nmkb")
-
 
 #setwd("~/Dropbox (ASU)/Indel_project/Script")
 #document
@@ -40,16 +39,14 @@ source(paste0(sub,"init_omega.R"))
 source(paste0(sub,"phylo_em.R"))
 
 
-#-log_likelihood
+# -log_likelihood
 LL_min  = function(theta){
-  # rmat  = GTR(theta[1:6], f0)
-  # Rmat  = MG94(rmat, theta[7], cod)
-  # -sum(log(expm(Rmat)*cf0)*dat1)
   val = LL(cod,codonstrs,syn,theta,f0,cf0,dat,num)
   return(-val)
 }
 
 
+##########################################
 main = function(Name, inFile){
   #example
   #Name   = "Results/nmkb100.1/17.5e.json"
@@ -90,13 +87,13 @@ main = function(Name, inFile){
   Pi2 = Pi2/sum(Pi2)
 
   o   = outer(sqrt(Pi2),1/sqrt(Pi2))
-  s94 = mg94*o                            #symmetric matrix
+  s94 = mg94*o    #symmetric matrix
   p94 = expm(s94)*t(o)
   P94 = p94*Pi2
   print(sum(P94))
 
-
-  #>simualte data
+  
+  #>>>>>>>>>>>>>>>>>>>simualte data
   set.seed(8088)
   dat = pseudo_data(1e+5,P94,num)
 
@@ -141,22 +138,12 @@ main = function(Name, inFile){
     pb = nmkb::nmkb(fn=LL_min, par=p0, lower=0.0, upper=2.5, control=list(tol=1e-4,trace=TRUE))
   })
 
-  # tm2 = system.time({
-  #   pb = dfoptim::nmkb(fn=LL, par=p0, lower=0.0, upper=2.5, control=list(tol=1e-4,trace=TRUE))
-  # })
-
-  # print(tm)
-  # print(pb$message)
-  # print(pb$par)
-
-  rmat = GTR(pb$par[1:6],f0)
-  tv   = -sum(diag(rmat)*f0)
-
+  rmat   = GTR(pb$par[1:6],f0)
+  tv     = -sum(diag(rmat)*f0)
   pb$par = c(pb$par,tv,f0)
   pj     = toJSON(pb)
 
   write(pj,Name)
-
 }
 
 #########################

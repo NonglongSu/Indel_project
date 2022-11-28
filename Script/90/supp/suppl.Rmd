@@ -1,0 +1,105 @@
+---
+title: "Distances"
+output:
+  pdf_document:
+    latex_engine: pdflatex
+    fig_width: 6.375
+    fig_height: 8.875
+mainfont: Source Sans Pro
+fontsize: 11pt
+geometry: margin=1in
+header-includes:
+  \AtBeginDocument{\let\maketitle\relax}
+  \pagenumbering{gobble}
+---
+
+```{r, echo = FALSE, message = FALSE}
+library(tidyverse)
+library(colorspace)
+library(ggpubr)
+
+knitr::opts_chunk$set(echo = FALSE, dev = "cairo_pdf")  #carip_pdf is just a gradphic device
+files <- fs::dir_ls(path="../../../test_90_species/Raw_data/JCdis_sum", glob="*.max.tsv")
+
+num_gamma_components = 2
+
+models <- read_csv("fitem.csv", show_col_types=FALSE) %>% 
+    nest(data=!name) %>% 
+    deframe() %>%
+    map(as.list)
+```
+
+```{r, results="asis", fig.align="center"}
+for(f in files) {
+    dat      <- read_tsv(f, show_col_types=FALSE)
+    dat_name <- basename(str_replace(f, ".max.tsv$", ""))
+
+    dat <- dat %>% mutate(
+        total_len = lenA+lenB,
+        diff = abs(lenA-lenB),
+        f = (gapA_len+gapB_len)/total_len,
+        fdiff = diff/total_len,
+        fadj = f-fdiff
+        )
+
+    # Calculate Distances
+    d  <- dat %>% filter(fadj <= 0.5 & fdiff <= 0.1) %>%
+        transmute(
+            p = mismatch_count/(match_count+mismatch_count),
+            t = -0.75*log(1-4/3*p)
+        )
+    
+    model <- models[[dat_name]]
+
+    # Calculate density function
+    x <- d$t
+    y <- model$f1*dgamma(x, shape=model$shape1, scale=model$scale1)
+    y <- y + model$f2*dgamma(x, shape=model$shape2, scale=model$scale2)
+
+    # Calculate CDF
+    u <- model$f1*pgamma(x, shape=model$shape1, scale=model$scale1)
+    u <- u + model$f2*pgamma(x, shape=model$shape2, scale=model$scale2)
+
+    par(mfrow=c(3,1))
+
+    tbl <- tibble(t=x,y=y,u=u)
+
+    col_indigo      <- "#000831"
+    col_salvia_blue <- "#96bfe6"
+    #Visualize the density of t
+    cz <- col_salvia_blue
+    cz <- c(cz,darken(cz, amount=0.33))
+    gg1 <- ggplot(tbl, aes(t)) + 
+      geom_histogram(aes(y=..density..),bins=40,fill=rep(cz,20)) +
+      geom_line(aes(x=t,y=y), color=col_indigo, lwd=1.5) +
+      xlab("Evolutionary Distance")
+
+    #Visualize model fit
+    cz <- col_salvia_blue
+    cz <- c(cz,darken(cz, amount=0.33))
+    gg2 <- ggplot(tbl, aes(u)) +
+      geom_histogram(breaks=seq(0,1,0.05), fill=rep(cz,10)) +
+      geom_hline(aes(yintercept=nrow(tbl)/20), lwd=1.5, lty=2, col=col_indigo) +
+      xlab("Empirical CDF")
+
+    #P-P plot 
+    gg3 <- ggplot(tibble(x=ppoints(length(u),a=0), y=sort(u)), aes(x=x,y=y)) +
+      geom_abline(slope=1,intercept=0, lwd=1.5, lty=2, col="darkgray") +
+      geom_line(lwd=1.5,col=cz[2]) +
+      xlab("Theoretical CDF") + ylab("Empirical CDF")
+
+    gg <- ggarrange(gg2 + theme(aspect.ratio=1),
+          gg3 + theme(aspect.ratio=1), labels=c("B","C"), ncol=2, nrow=1)
+    gg <- ggarrange(gg1, gg, labels=c("A", ""), 
+          ncol=1,nrow=2, heights=c(2,1))
+
+    gg <- annotate_figure(gg, top=text_grob(dat_name, 
+               face = "bold", size=14))
+
+ 
+
+    print(gg)
+
+    cat("\\newpage")
+}
+```

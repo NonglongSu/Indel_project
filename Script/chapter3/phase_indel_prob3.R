@@ -14,7 +14,7 @@ prob_insert = function(As2,g1,f0){
       }
   }
   f.rank = match(insN,DNA_BASES)
-  f.prob = log(prod(f0[f.rank]))
+  f.prob = sum(log(f0[f.rank]))
   return(f.prob)
 }
 
@@ -106,10 +106,10 @@ rmgap = function(A,As,g){
 }
 
 #Generate obs-codon matrix
-countN = function(rA, codonstrs){
+countN = function(rA, codonstrs, ncd){
   seqs = str_split(rA,'')
   len  = length(seqs[[1]])
-  nmat = matrix(0,64,64)
+  nmat = matrix(0,ncd,ncd)
   i=1
   while(i<len) {
     c1 = paste0(seqs[[1]][i:(i+2)], collapse = '')
@@ -126,7 +126,7 @@ countN = function(rA, codonstrs){
 
 
 
-ziqi_prob = function(A,g0,e3,Pmat,codonstrs,f0){
+ziqi_prob = function(A,g0,e3,Pmat,codonstrs,f0,ncd){
   
   As = str_split(A,'')
   g  = IRangesList(lapply(As, function(x){IRanges(x=='-')}))
@@ -173,14 +173,13 @@ ziqi_prob = function(A,g0,e3,Pmat,codonstrs,f0){
   #print(scoreT+scoreE+endP)
   
   rA     = rmgap(A,As,g)
-  dat    = countN(rA,codonstrs)
+  dat    = countN(rA,codonstrs,ncd)
   scoreP = sum(Pmat*dat)
   
   ##sum LL
   score_ziqi = scoreE + scoreT + endP + scoreP + insP
   if(score_ziqi==-Inf){
     print("minus infinity z score!")
-    break
   }
   #summary stat
   res = list(c(N.012),c(M.012),dat,score_ziqi,avg.g)
