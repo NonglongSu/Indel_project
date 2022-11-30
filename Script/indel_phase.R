@@ -2,7 +2,7 @@
 suppressPackageStartupMessages(library(Biostrings))
 suppressPackageStartupMessages(library(stringr))
 
-#setwd("~/Dropbox (ASU)/Indel_project/test_human_mouse_rat/Data_6")
+#setwd("~/Dropbox (ASU)/Indel_project/test_human_mouse_rat")
 
 #Generate dataframe: pos | width
 phasing = function(file){
@@ -92,13 +92,13 @@ gg_phase = function(dat,win){
 }
 
 ###############################################
-#ouFig  = "Figure/Phase.mafft.pdf"
+#ouFig  = "Results/Phase.mafft.pdf"
 main = function(ouFig){
   
-  dir1  = "../Data_3/Mafft/mapped_cds"
-  dir2  = "Mafft/mapped_cds"
-  dir3  = "../Data_9/Mafft/mapped_cds"
-  dir4  = "../Data_12/Mafft/mapped_cds"
+  dir1  = "Data_3/Mafft/mapped_cds"
+  dir2  = "Data_6/Mafft/mapped_cds"
+  dir3  = "Data_9/Mafft/mapped_cds"
+  dir4  = "Data_12/Mafft/mapped_cds"
   
   pha1 = phase_gen(dir1)
   pha2 = phase_gen(dir2)

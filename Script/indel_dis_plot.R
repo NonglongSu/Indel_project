@@ -93,14 +93,14 @@ gg_win = function(dat,win){
 ####################################################################
 #ouFig = "Figure/dis.mafft.pdf"
 main = function(ouFig){
-  dir1a   = "../Data_3/Mafft/updated_cds"
-  dir1b   = "../Data_3/Mafft/mapped_cds"
-  dir2a   = "Mafft/updated_cds"
-  dir2b   = "Mafft/mapped_cds"
-  dir3a   = "../Data_9/Mafft/updated_cds"
-  dir3b   = "../Data_9/Mafft/mapped_cds"
-  dir4a   = "../Data_12/Mafft/updated_cds"
-  dir4b   = "../Data_12/Mafft/mapped_cds"
+  dir1a   = "Data_3/Mafft/updated_cds"
+  dir1b   = "Data_3/Mafft/mapped_cds"
+  dir2a   = "Data_6/Mafft/updated_cds"
+  dir2b   = "Data_6/Mafft/mapped_cds"
+  dir3a   = "Data_9/Mafft/updated_cds"
+  dir3b   = "Data_9/Mafft/mapped_cds"
+  dir4a   = "Data_12/Mafft/updated_cds"
+  dir4b   = "Data_12/Mafft/mapped_cds"
   
   dat1 = dis_gen(dir1a,dir1b)
   dat2 = dis_gen(dir2a,dir2b)

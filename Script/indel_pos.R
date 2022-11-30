@@ -149,7 +149,25 @@ sum_phase_type = function(inD){
   cbind(pha,typeNS)
 }
 
-#####################################
+##ggplot
+gg_plot = function(df,wind){
+  Pos    = round(df$pos/df$seq.len,3)
+  newtab = cbind(Pos,df)
+  g1  = ggplot(newtab,aes(x=factor(phase), y=Pos, color=factor(phase))) + 
+    geom_dotplot(dotsize=.2, drop=T, binwidth=1/40, fill=NA, binaxis='y', stackdir='center') + 
+    labs(x="Phase",y="Position",) + theme(axis.title=element_text(size=8))
+  gg1 = g1 + coord_flip()
+  
+  g2  = ggplot(newtab,aes(x=factor(typeNS), y=Pos, color=factor(typeNS))) + 
+    geom_dotplot(dotsize=.2, drop=T, binwidth=1/40, fill=NA, binaxis='y', stackdir='center') + 
+    labs(x="typeN(0) vs typeS(1)",y="Position") + theme(axis.title=element_text(size=8))
+  gg2 = g2 + coord_flip()
+  
+  gg    = ggarrange(gg1, gg2, labels=c("A","B"), ncol=1,nrow=2)
+  gg    = annotate_figure(gg,top=text_grob(paste0("Window size = ",wind),face="bold",size=10))
+  print(gg)
+}
+
 
 
 
@@ -158,7 +176,7 @@ sum_phase_type = function(inD){
 ################################
 #setwd("~/Dropbox (ASU)/Indel_project/test_human_mouse_rat")
 #ouFig = "Results/Phase.mafft.pos.pdf"
-main = function(ouFig,ouF){
+main = function(ouFig){
   #Create a codon table
   codon <<- list (c("TTT","TTC"),
                   c("TTA","TTG","CTT","CTC","CTA","CTG"),
@@ -194,31 +212,10 @@ main = function(ouFig,ouF){
   sumtab4 = sum_phase_type(dir4)
   
   ##PART II
-  wind1=3;wind2=6;wind3=9;wind4=12
+  wind1=3; wind2=6; wind3=9; wind4=12
   
-  # ggplot(newtab,aes(x=Pos, color=factor(phase))) + geom_dotplot(dotsize=.2, drop=T, binwidth=1/40, fill=NA, stackgroups=T, binpositions="all") + 
-  #   labs(x="CDS position") + geom_density(linetype="dashed")
   
-  ##
-  gg_plot = function(df,wind){
-    Pos    = round(df$pos/df$seq.len,3)
-    newtab = cbind(Pos,df)
-    g1  = ggplot(newtab,aes(x=factor(phase), y=Pos, color=factor(phase))) + 
-      geom_dotplot(dotsize=.2, drop=T, binwidth=1/40, fill=NA, binaxis='y', stackdir='center') + 
-      labs(x="Phase",y="Position",) + theme(axis.title=element_text(size=8))
-    gg1 = g1 + coord_flip()
-    
-    g2  = ggplot(newtab,aes(x=factor(typeNS), y=Pos, color=factor(typeNS))) + 
-      geom_dotplot(dotsize=.2, drop=T, binwidth=1/40, fill=NA, binaxis='y', stackdir='center') + 
-      labs(x="typeN(0) vs typeS(1)",y="Position") + theme(axis.title=element_text(size=8))
-    gg2 = g2 + coord_flip()
-    
-    gg    = ggarrange(gg1, gg2, labels=c("A","B"), ncol=1,nrow=2)
-    gg    = annotate_figure(gg,top=text_grob(paste0("Window size = ",wind),face="bold",size=10))
-    print(gg)
-  }
-  
-  pdf(ouFig,onefile=T)
+  pdf(ouFig,onefile=T, paper="letter", width=6.375, height=8.875)
   gg_plot(sumtab1,wind1)
   gg_plot(sumtab2,wind2)
   gg_plot(sumtab3,wind3)
@@ -227,3 +224,6 @@ main = function(ouFig,ouF){
   
 }
   
+######################################
+args = commandArgs(trailingOnly = TRUE)
+main(args[1])
