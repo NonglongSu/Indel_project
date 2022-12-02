@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: 
         run:  Rscript --vanilla coverage_report.R
-        working-directory: ../../Script/tests
+        working-directory: Script/tests
 
 
 
