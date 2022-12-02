@@ -4,19 +4,17 @@ on: [push]
  
 jobs:
   build:
- 
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        R-version: [4.2]
+        R: ['4.2.1']
+    name: R ${{ matrix.R }} sample
 
 steps:
 - uses: actions/checkout@v2
-- name: Set up R ${{ matrix.R-version }}
-- uses: actions/setup-R@v2
+- name: Test with R
+- uses: r-lib/actions/setup-r@v2
   with:
-     R-version: ${{ matrix.R-version }} 
-- name: Test with R 
-  run: |
-    Rscript --vanilla Script/tests/coverage_report.R
+     r-version: ${{ matrix.R }} 
+- run: Rscript --vanilla Script/tests/coverage_report.R
 
