@@ -1,20 +1,18 @@
-env:
-RENV_PATHS_ROOT: ~/.local/share/renv
-steps:
-- name: Cache packages
-uses: actions/cache@v1
-with:
-path: ${{ env.RENV_PATHS_ROOT }}
-key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-restore-keys: |
-${{ runner.os }}-renv-
-- name: Restore packages
-shell: Rscript {0}
-run: |
-if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-renv::restore()
-- run: R -e 'renv::restore()'
-- run: Rscript coverage_report.R
+on: push
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        R: [ '4.2.1' ]
+    name: R ${{ matrix.R }} unitTest
+    steps:
+      -name: Unit test with R 
+       run: Rscript --vanilla coverage_report.R
+       working-directory: ../../Script/tests
+
 
 
 
