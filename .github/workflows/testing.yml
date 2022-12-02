@@ -9,6 +9,7 @@ jobs:
         R: [ '4.2.1' ]
     name: R ${{ matrix.R }} unitTest
     steps:
+      - uses: actions/checkout@v3
       - name: 
         run:  Rscript --vanilla coverage_report.R
         working-directory: Script/tests
