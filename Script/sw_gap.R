@@ -168,7 +168,7 @@ main = function(inFile,ouDir,num1,num2){
 }
 
 #######################################
-#compatible with run_test.R
+#compatible with unit test. 
 args = commandArgs(trailingOnly=TRUE)
  if(interactive()){
   main(args[1], args[2], args[3], args[4])

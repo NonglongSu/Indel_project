@@ -1,0 +1,18 @@
+name: Unit test of R
+ 
+on: [push]
+ 
+jobs:
+  build:
+ 
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        R-version: [4.2.1]
+
+steps:
+    - uses: actions/checkout@v2
+    - name: Unit test with Rscript
+      run: |
+        Rscript --vanilla Script/tests/coverage_report.R
+
