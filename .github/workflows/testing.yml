@@ -9,7 +9,6 @@ jobs:
         R: [ '4.2.1' ]
     name: R ${{ matrix.R }} unitTest
     steps:
-      - run: |
-          Rscript --vanilla ../../Script/tests/coverage_report.R
+      - run: Rscript --vanilla ../Script/tests/coverage_report.R
 
 
