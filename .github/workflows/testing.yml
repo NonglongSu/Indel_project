@@ -11,8 +11,12 @@ jobs:
         R-version: [4.2.1]
 
 steps:
-    - uses: actions/checkout@v2
-    - name: Unit test with Rscript
-      run: |
-        Rscript --vanilla Script/tests/coverage_report.R
+- uses: actions/checkout@v2
+- name: Set up R ${{ matrix.R-version }}
+- uses: actions/setup-R@v2
+  with:
+     R-version: ${{ matrix.R-version }} 
+- name: Test with R 
+  run: |
+    Rscript --vanilla Script/tests/coverage_report.R
 
