@@ -7,9 +7,8 @@ jobs:
     strategy:
       matrix:
         R: [ '4.2.1' ]
-    name: R ${{ matrix.R }} sample
+    name: R ${{ matrix.R }} unitTest
     steps:
-      name:  unit test with R 
       - run: Rscript --vanilla ../../Script/tests/coverage_report.R
 
 
