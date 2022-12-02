@@ -47,7 +47,7 @@ wid_ref.2 = substr(seq1, start =res2[1]- lwall, stop = res2[1] + rwall)
 
 
 ##########################################################################
-source("sw_gap.R")
+source("../sw_gap.R")
 
 
 test_that("Test Align() func", {

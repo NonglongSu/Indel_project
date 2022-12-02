@@ -1,11 +1,11 @@
-setwd("~/Dropbox (ASU)/Indel_project/Script")
+#setwd("~/Dropbox (ASU)/Indel_project/Script")
 suppressPackageStartupMessages(library(covr))
 
 
-covr = file_coverage(source_files = c("sw_gap.R"),
-                     test_files   = c("tests/testthat/test_sw_gap.R"))
+covr = file_coverage(source_files = c("../sw_gap.R"),
+                     test_files   = c("testthat/test_sw_gap.R"))
 covr
-report(covr,file="tests/coverage_report.html")
+report(covr,file="coverage_report.html")
 
 
 #testthat::test_dir("testthat")
