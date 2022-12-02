@@ -9,8 +9,6 @@ jobs:
         R: [ '4.2.1' ]
     name: R ${{ matrix.R }} unitTest
     steps:
-      - run: |
-          source("../../Script/tests/coverage_report.R")
-        shell: Rscript {0}
+      - run: make coverage_report
 
 
