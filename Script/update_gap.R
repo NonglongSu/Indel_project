@@ -15,7 +15,7 @@ suppressPackageStartupMessages(library(stringi))
 # convert ---/---       to ===/===
 # convert ---AAA---     to ===AAA===
 
-#Update any large gaps
+#Markout any gaps > 12
 filter_Long = function(x, X){
   if(length(x) == 0){
     return(X)
@@ -80,9 +80,7 @@ ad_gap_dis = function(y, seq, ref){
 }
 
 
-# seq1 = "AAT---AAACAAAGAATGCTTACTGT---ATAAGGCTTACTGTTCTAGCG---ATCACCGCG---TCATGTCTAGTTATGAACGGC------GGTTTAACATTGAATAGCAAGGCACTTCCATAATAGGGCCGTC---GTAATTGTCTAATATAG------ATAGTA---"
-# seq2 = "TAA------AA---AATTTGATGCTACATTGGATGAGTCTACTTCGAGCGCGCCGCATCGATTGCAAGAGCAGTGTTGCCT---AAGAGCCGTTAGATGCGTCGTTG---ATCGCGTCCGATAATTCGGGAGTTG---CCCAATATTTAATATGATGA---TAGCTATAA"
-
+##########################################################
 # inFile = "../Raw_data/pair_mafft/ENSG00000000460.fa"
 # oudir  = "Mafft/updated_cds/"
 # num1   = '6'; num2 = '12'
@@ -156,8 +154,8 @@ main = function(inFile,ouDir,num1,num2){
 
 ###############################################
 #compatible with run_test.R
-args = commandArgs(trailingOnly=T)
-if(!interactive()){
+args = commandArgs(trailingOnly=TRUE)
+if(interactive()){
  main(args[1], args[2], args[3], args[4])
 }
 

@@ -166,7 +166,7 @@ prop_test = function(tab){
 
 #ouFig = "Results/Phase.mafft.ins.del.pdf"
 #ouF = "Results/Phase.prop.test.csv"
-main = function(ouFig,ouF){
+main = function(ouFig){
   
   da1  = "Data_3/Mafft/updated_cds"
   da2  = "Data_3/Mafft/mapped_cds"
@@ -203,12 +203,12 @@ main = function(ouFig,ouF){
   test.df = apply(testAll, 2, function(x){sprintf("%.3f",x)})
   rownames(test.df) = c('Insertion','Deletion','P.value')
   colnames(test.df) = rep(c('phase0','phase1','phase2'),4)
-  write.csv(test.df,ouF,row.names=T,quote=F)
+  #write.csv(test.df,ouF,row.names=T,quote=F)
 }
   
 
 #################################################
 args = commandArgs(trailingOnly=TRUE)
-main(args[1],args[2])
+main(args[1])
   
 

@@ -1,12 +1,9 @@
-library(readr)
-library(tidyverse)
+suppressPackageStartupMessages(library(readr))
+suppressPackageStartupMessages(library(tidyverse))
 
-# setwd("~/Dropbox (ASU)/Indel_project/test_human_mouse_rat/Script")
+# setwd("~/Dropbox (ASU)/Indel_project/Script")
 
-# file.1 = "../test_human_mouse_rat/Data_6/Figure/mafft_edge/align.ori.l.txt"
-# file.2 = "../test_human_mouse_rat/Data_6/Figure/mafft_edge/align.better.l.txt"
-# file.3 = "../test_human_mouse_rat/Data_6/Figure/mafft_edge//align.ori.r.txt"
-# file.4 = "../test_human_mouse_rat/Data_6/Figure/mafft_edge/align.better.r.txt"
+
 
 markup = function(x, y){
   
@@ -27,7 +24,11 @@ markup = function(x, y){
   return(c(x3, y3))
 }
 
-
+##################################################################################
+# file.1 = "../test_human_mouse_rat/Data_6/Figure/mafft_edge/align.ori.l.txt"
+# file.2 = "../test_human_mouse_rat/Data_6/Figure/mafft_edge/align.better.l.txt"
+# file.3 = "../test_human_mouse_rat/Data_6/Figure/mafft_edge//align.ori.r.txt"
+# file.4 = "../test_human_mouse_rat/Data_6/Figure/mafft_edge/align.better.r.txt"
 main = function(file.1, file.2, file.3, file.4, ouFile){
   
   data.1 = read_delim(file.1, "\t", col_names = TRUE)

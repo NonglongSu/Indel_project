@@ -17,7 +17,7 @@ find_gap = function(seq, sign){
   return(gaps)
 }
 
-# Determine number of non-syn/syn sites
+#Determine number of non-syn/syn sites
 cal_sites = function(x, tag){
   unit.x  = substr(x, tag, tag + 2)
   toMatch = c('-', '\\+', '=', 'N')
@@ -43,7 +43,7 @@ cal_sites = function(x, tag){
   return(res)
 }
 
-# Determine number of non-syn/syn substitutions
+#Determine number of non-syn/syn substitutions
 cal_subs = function(x, y, tag){
   
   unit.x  = substr(x, tag, tag + 2)
@@ -81,7 +81,7 @@ cal_subs = function(x, y, tag){
   return(c(sub.s, sub.n))
 }
 
-# Find all possible substitution pathways.        
+#Find all possible substitution pathways.        
 # unit.x = "TTT"
 # unit.y = "TAC"
 # unit.y = "GAC"
@@ -118,7 +118,7 @@ collect_allSubs = function(unit.x, unit.y, mut.pos){
   return(unit.list)
 }
 
-# Sum the number of substitutions of all possible pathways
+#Sum the number of substitutions of all possible pathways
 # section = c("TTT","TTC")
 # 12 , 6
 cal_subsub = function(unit.list, sub.s, sub.n, sec){
@@ -136,7 +136,7 @@ cal_subsub = function(unit.list, sub.s, sub.n, sec){
   return(c(sub.s, sub.n))
 }
 
-# Determine the bin size
+#Determine the bin size
 binSum = function(gVec, wVec, binMax){
   t.limits = 0
   g.limits = 0

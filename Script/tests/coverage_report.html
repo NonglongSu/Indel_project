@@ -94,7 +94,7 @@ table.table-condensed {
   font-size: 11px;
 }</style>
   <div class="col-md-8 col-md-offset-2">
-    <h2> coverage - 57.47%</h2>
+    <h2> coverage - 70.16%</h2>
     <div class="tabbable">
       <ul class="nav nav-tabs" data-tabsetid="covr">
         <li class="active">
@@ -106,12 +106,1152 @@ table.table-condensed {
       </ul>
       <div class="tab-content" data-tabsetid="covr">
         <div class="tab-pane active" title="Files" data-value="Files" id="tab-covr-1">
-          <div id="htmlwidget-ef0e0bcb58f35c3e7434" style="width:100%;height:500px;" class="datatables html-widget"></div>
-          <script type="application/json" data-for="htmlwidget-ef0e0bcb58f35c3e7434">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["<a href=\"#\">sw_gap.R<\/a>"],[179],[87],[50],[37],["9"],["57.47%"]],"container":"<table class=\"row-border\">\n  <thead>\n    <tr>\n      <th>File<\/th>\n      <th>Lines<\/th>\n      <th>Relevant<\/th>\n      <th>Covered<\/th>\n      <th>Missed<\/th>\n      <th>Hits / Line<\/th>\n      <th>Coverage<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"dom":"t","paging":false,"columnDefs":[{"targets":6,"createdCell":"function(td, cellData, rowData, row, col) {\n  var percent = cellData.replace(\"%\", \"\");\n  if (percent > 90) {\n    var grad = \"linear-gradient(90deg, #edfde7 \" + cellData + \", white \" + cellData + \")\";\n  } else if (percent > 75) {\n    var grad = \"linear-gradient(90deg, #f9ffe5 \" + cellData + \", white \" + cellData + \")\";\n  } else {\n    var grad = \"linear-gradient(90deg, #fcece9 \" + cellData + \", white \" + cellData + \")\";\n  }\n  $(td).css(\"background\", grad);\n}\n"},{"className":"dt-right","targets":[1,2,3,4]}],"order":[],"autoWidth":false,"orderClasses":false},"callback":"function(table) {\ntable.on('click.dt', 'a', function() {\n  files = $('div#files div');\n  files.not('div.hidden').addClass('hidden');\n  id = $(this).text();\n  files.filter('div[id=\\'' + id + '\\']').removeClass('hidden');\n  $('ul.nav a[data-value=Source]').text(id).tab('show');\n});\n}"},"evals":["options.columnDefs.0.createdCell","callback"],"jsHooks":[]}</script>
+          <div id="htmlwidget-d37593f1459f084ffb4e" style="width:100%;height:500px;" class="datatables html-widget"></div>
+          <script type="application/json" data-for="htmlwidget-d37593f1459f084ffb4e">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["<a href=\"#\">../update_gap.R<\/a>","<a href=\"#\">../sw_gap.R<\/a>"],[162,179],[74,50],[37,50],[37,0],["1","16"],["50.00%","100.00%"]],"container":"<table class=\"row-border\">\n  <thead>\n    <tr>\n      <th>File<\/th>\n      <th>Lines<\/th>\n      <th>Relevant<\/th>\n      <th>Covered<\/th>\n      <th>Missed<\/th>\n      <th>Hits / Line<\/th>\n      <th>Coverage<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"dom":"t","paging":false,"columnDefs":[{"targets":6,"createdCell":"function(td, cellData, rowData, row, col) {\n  var percent = cellData.replace(\"%\", \"\");\n  if (percent > 90) {\n    var grad = \"linear-gradient(90deg, #edfde7 \" + cellData + \", white \" + cellData + \")\";\n  } else if (percent > 75) {\n    var grad = \"linear-gradient(90deg, #f9ffe5 \" + cellData + \", white \" + cellData + \")\";\n  } else {\n    var grad = \"linear-gradient(90deg, #fcece9 \" + cellData + \", white \" + cellData + \")\";\n  }\n  $(td).css(\"background\", grad);\n}\n"},{"className":"dt-right","targets":[1,2,3,4]}],"order":[],"autoWidth":false,"orderClasses":false},"callback":"function(table) {\ntable.on('click.dt', 'a', function() {\n  files = $('div#files div');\n  files.not('div.hidden').addClass('hidden');\n  id = $(this).text();\n  files.filter('div[id=\\'' + id + '\\']').removeClass('hidden');\n  $('ul.nav a[data-value=Source]').text(id).tab('show');\n});\n}"},"evals":["options.columnDefs.0.createdCell","callback"],"jsHooks":[]}</script>
         </div>
         <div class="tab-pane" title="Source" data-value="Source" id="tab-covr-2">
           <div id="files">
-            <div id="sw_gap.R" class="hidden">
+            <div id="../update_gap.R" class="hidden">
+              <table class="table-condensed">
+                <tbody>
+                  <tr class="never">
+                    <td class="num">1</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"># Update the gaps </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">2</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">suppressWarnings(suppressMessages(library(tidyverse)))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">3</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">suppressWarnings(suppressMessages(library(dplyr)))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">4</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">suppressPackageStartupMessages(library(Biostrings))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">5</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">suppressPackageStartupMessages(library(BiocGenerics))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">6</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">suppressPackageStartupMessages(library(parallel))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">7</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">suppressPackageStartupMessages(library(S4Vectors))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">8</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">suppressPackageStartupMessages(library(seqinr))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">9</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">suppressPackageStartupMessages(library(stringi))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">10</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">11</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">#setwd("~/Dropbox (ASU)/Indel_project/test_human_mouse_rat/Data_6")</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">12</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">13</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"># Initial word size (Window) as 27(6+3+6). </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">14</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"># convert ---AAA/AAA--- to ===AAA/AAA===</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">15</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"># convert ---/---       to ===/===</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">16</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"># convert ---AAA---     to ===AAA===</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">17</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">18</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">#Markout any gaps &gt; 12</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">19</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">filter_Long = function(x, X){</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">20</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  if(length(x) == 0){</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">21</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    return(X)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">22</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  }else{</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">23</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    st  = start(x)</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">24</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    en  = end(x)</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">25</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    wid = width(x) </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">26</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    for(i in 1:length(x)){</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">27</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">      subseq(X, start = st[i], end = en[i]) = stri_rand_strings(1, wid[i], '[=]')</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">28</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    }</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">29</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  }</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">30</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  return(X)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">31</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">}</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">32</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">33</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">#Clean up of start/end position of the seq</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">34</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">start_stop_test = function(X){</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">35</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  Start = substr(X, 1, Window)</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">36</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  IsGap.1 = grepl('-', Start)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">37</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">38</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  Stop = substr(X, (nchar(X) - (Window - 1)), nchar(X))</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">39</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  IsGap.2 = grepl('-', Stop) </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">40</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">41</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  if(IsGap.1 == TRUE){</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">42</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    Start = gsub('-', '=', Start)</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">43</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    substr(X, 1, Window) = Start</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">44</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  }</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">45</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">46</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  if(IsGap.2 == TRUE){</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">47</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    Stop = gsub('-', '=', Stop)</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">48</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    substr(X, (nchar(X) - (Window - 1)), nchar(X)) = Stop</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">49</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  }</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">50</td>
+                    <td class="coverage">2<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  return(X)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">51</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">}</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">52</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">53</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">#Adjust gap distance</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">54</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">ad_gap_dis = function(y, seq, ref){</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">55</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">56</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  if(length(y) == 0){return(c(seq, ref))}</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">57</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">58</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  pos.all = start(y)</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">59</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  wid.all = width(y) </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">60</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  pos.en  = end(y)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">61</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">62</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  for(i in 1:length(pos.all)){</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">63</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    pos = pos.all[i]</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">64</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    wid = wid.all[i]</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">65</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    en  = pos.en[i]</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">66</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    left   = substr(seq, start = pos - Wall - 3, stop = pos - 1)                    ## extra three is to make sure each gap is independent.</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">67</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    right  = substr(seq, start = pos + wid, stop = pos + wid + (Wall + 2))</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">68</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    window = substr(ref, start = pos - Wall - 3, stop = pos + wid + (Wall + 2))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">69</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">70</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    l1  = grep("[-=]", left)</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">71</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    r1  = grep("[-=]", right)</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">72</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    Wid = grep("[-=]", window)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">73</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    </pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">74</td>
+                    <td class="coverage">6<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    if(length(l1) != 0 | length(r1) != 0 | length(Wid) != 0){</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">75</td>
+                    <td class="coverage">4<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">      subseq(seq, start = pos, end = en) = stri_rand_strings(1, wid, '[=]')</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">76</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">    }</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">77</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  }</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">78</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  res = c(seq, ref)</pre>
+                    </td>
+                  </tr>
+                  <tr class="covered">
+                    <td class="num">79</td>
+                    <td class="coverage">1<em>x</em></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  return(res)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">80</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">}</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">81</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">82</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">83</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">##########################################################</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">84</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"># inFile = "../Raw_data/pair_mafft/ENSG00000000460.fa"</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">85</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"># oudir  = "Mafft/updated_cds/"</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">86</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"># num1   = '6'; num2 = '12'</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">87</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">88</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">main = function(inFile,ouDir,num1,num2){</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">89</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"> </pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">90</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  dna = readDNAStringSet(inFile)</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">91</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  name = names(dna)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">92</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">93</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  #Set up vars</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">94</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  num1 = as.numeric(num1)</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">95</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  num2 = as.numeric(num2)</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">96</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  Window  &lt;&lt;- num1</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">97</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  Wall    &lt;&lt;- num2</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">98</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">99</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  #String mode</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">100</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  spec.1   = toString(dna[[1]])</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">101</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  spec.2   = toString(dna[[2]])</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">102</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">103</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  #Find gap range</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">104</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  dna.1 = str_split(as.character(dna), '')</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">105</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  g     = lapply(dna.1, function(x) { IRanges(x == '-')})</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">106</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  g     = IRangesList(g)</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">107</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  m     = g[[1]]</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">108</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  r     = g[[2]]</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">109</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">110</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  wid.m = width(m)</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">111</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  wid.r = width(r)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">112</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">113</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  #Test gap range</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">114</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  gap = c(3,6,9,12)</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">115</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  m.null = m[!(wid.m %in% gap)]</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">116</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  r.null = r[!(wid.r %in% gap)]</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">117</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">118</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  ########################################PART II</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">119</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  M = filter_Long(m.null,spec.1)</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">120</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  R = filter_Long(r.null,spec.2)  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">121</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"> </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">122</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  #Clean up of start-end region of the seq</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">123</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  M.1 = start_stop_test(M)</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">124</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  R.1 = start_stop_test(R)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">125</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">126</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">127</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  #Update old gap length </pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">128</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  M.2 = str_split(as.character(M.1),'')</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">129</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  R.2 = str_split(as.character(R.1),'')</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">130</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">131</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  g.m = lapply(M.2, function(x) { IRanges(x == '-')})</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">132</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  g.r = lapply(R.2, function(x) { IRanges(x == '-')})</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">133</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">134</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  g.m = IRangesList(g.m)[[1]]</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">135</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  g.r = IRangesList(g.r)[[1]]</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">136</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">137</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  #Update the gap via swapping reference</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">138</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  m.all = g.m[width(g.m)==3 | width(g.m)==6 | width(g.m)==9 | width(g.m)==12 ]</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">139</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  r.all = g.r[width(g.r)==3 | width(g.r)==6 | width(g.r)==9 | width(g.r)==12 ]</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">140</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">141</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  M_R = ad_gap_dis(m.all, M.1, R.1)</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">142</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  R_M = ad_gap_dis(r.all, M_R[2], M_R[1])</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">143</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">144</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  #Update the focal-seq</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">145</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  new.M   = R_M[2]</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">146</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  new.R   = R_M[1]</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">147</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  new_seq = list(new.M,new.R)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">148</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">149</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  write.fasta(sequences=new_seq, names=name, nbchar=80,</pre>
+                    </td>
+                  </tr>
+                  <tr class="missed">
+                    <td class="num">150</td>
+                    <td class="coverage">!</td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">              open="w", as.string=TRUE, file.out=paste0(ouDir,basename(inFile)))</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">151</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">  </pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">152</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">}</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">153</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">154</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">155</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">###############################################</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">156</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">#compatible with run_test.R</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">157</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">args = commandArgs(trailingOnly=TRUE)</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">158</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">if(interactive()){</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">159</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"> main(args[1], args[2], args[3], args[4])</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">160</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r">}</pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">161</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                  <tr class="never">
+                    <td class="num">162</td>
+                    <td class="coverage"></td>
+                    <td class="col-sm-12">
+                      <pre class="language-r"></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="../sw_gap.R" class="hidden">
               <table class="table-condensed">
                 <tbody>
                   <tr class="never">
@@ -891,16 +2031,16 @@ table.table-condensed {
                       <pre class="language-r">main = function(inFile,ouDir,num1,num2){</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">112</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  dna = readBStringSet(inFile)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">113</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  name = names(dna)</pre>
                     </td>
@@ -919,30 +2059,30 @@ table.table-condensed {
                       <pre class="language-r">  #Set up var (global var)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">116</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  num1 = as.numeric(num1)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">117</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  num2 = as.numeric(num2)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">118</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  Window  &lt;&lt;- num1</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">119</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  Wall    &lt;&lt;- num2</pre>
                     </td>
@@ -961,16 +2101,16 @@ table.table-condensed {
                       <pre class="language-r">  #String mode</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">122</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  spec.1   = toString(dna[[1]])</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">123</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  spec.2   = toString(dna[[2]])</pre>
                     </td>
@@ -989,37 +2129,37 @@ table.table-condensed {
                       <pre class="language-r">  #Capture all gaps of different lengths(3,6,9,12)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">126</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  dna.1 = str_split(as.character(dna), '')</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">127</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  g     = lapply(dna.1, function(x) { IRanges(x == '-')})</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">128</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  g     = IRangesList(g)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">129</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  m     = g[[1]]</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">130</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  r     = g[[2]]</pre>
                     </td>
@@ -1031,44 +2171,44 @@ table.table-condensed {
                       <pre class="language-r">  </pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">132</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  wid.m = width(m)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">133</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  wid.r = width(r)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">134</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  l.m   = length(wid.m)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">135</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  l.r   = length(wid.r)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">136</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  pos.m = start(m)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">137</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  pos.r = start(r)</pre>
                     </td>
@@ -1087,23 +2227,23 @@ table.table-condensed {
                       <pre class="language-r">  </pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">140</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  if((l.m &gt; 0) &amp; (l.r &gt; 0)){</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">141</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">    for(i in 1:l.m){</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">142</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">      spec.1 = Merge(pos.m[i], wid.m[i], spec.1, spec.2)</pre>
                     </td>
@@ -1115,16 +2255,16 @@ table.table-condensed {
                       <pre class="language-r">    }</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">144</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">    for(i in 1:l.r){</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">145</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">      spec.2 = Merge(pos.r[i], wid.r[i], spec.2, spec.1)</pre>
                     </td>
@@ -1136,23 +2276,23 @@ table.table-condensed {
                       <pre class="language-r">    }</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">147</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  }else if((l.m &gt; 0) &amp; (l.r == 0)){</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">148</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">    for(i in 1:l.m){</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">149</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">      spec.1 = Merge(pos.m[i], wid.m[i], spec.1, spec.2)</pre>
                     </td>
@@ -1164,23 +2304,23 @@ table.table-condensed {
                       <pre class="language-r">    }</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">151</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  }else if((l.m == 0) &amp; (l.r &gt; 0)){</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">152</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">    for(i in 1:l.r){</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">153</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">      spec.2 = Merge(pos.r[i], wid.r[i], spec.2, spec.1)</pre>
                     </td>
@@ -1199,9 +2339,9 @@ table.table-condensed {
                       <pre class="language-r">  }else{</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">156</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">    quit()</pre>
                     </td>
@@ -1227,37 +2367,37 @@ table.table-condensed {
                       <pre class="language-r">  #Filter out the seq with '+++' only.</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">160</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  flag = unlist(lapply(c(spec.1, spec.2), function(x){grepl('-', x)}))</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">161</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">  if(any(flag)==TRUE){</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">162</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">    new_seq = list(spec.1, spec.2)</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">163</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">    write.fasta(sequences=new_seq, names=name, nbchar=80,</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">164</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">                open="w", as.string = TRUE, file.out=paste0(ouDir, basename(inFile)) )</pre>
                     </td>
@@ -1269,9 +2409,9 @@ table.table-condensed {
                       <pre class="language-r">  }else{</pre>
                     </td>
                   </tr>
-                  <tr class="missed">
+                  <tr class="never">
                     <td class="num">166</td>
-                    <td class="coverage">!</td>
+                    <td class="coverage"></td>
                     <td class="col-sm-12">
                       <pre class="language-r">    quit()</pre>
                     </td>

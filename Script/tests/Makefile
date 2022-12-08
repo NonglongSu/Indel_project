@@ -5,14 +5,15 @@ all:
 
 RSCRIPT = Rscript --vanilla
 
-###########################
+###########################################unit test
 
-test_udpdate_gap: test_update_gap.R
+test_update_gap: testthat/test_update_gap.R
 	$(RSCRIPT) $<
-
 
 test_sw_gap: testthat/test_sw_gap.R
 	$(RSCRIPT) $<
+
+
 
 ##############################
 test_phase_indel_prob_wz: test_phase_indel_prob_wz.R

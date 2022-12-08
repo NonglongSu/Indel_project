@@ -1,9 +1,11 @@
-#setwd("~/Dropbox (ASU)/Indel_project/Script")
+#setwd("~/Dropbox (ASU)/Indel_project/Script/tests")
 suppressPackageStartupMessages(library(covr))
 
 
-covr = file_coverage(source_files = c("../sw_gap.R"),
-                     test_files   = c("testthat/test_sw_gap.R"))
+covr = file_coverage(source_files = c("../sw_gap.R", 
+                                      "../update_gap.R"),
+                     test_files   = c("testthat/test_sw_gap.R",
+                                      "testthat/test_update_gap.R"))
 covr
 report(covr,file="coverage_report.html")
 

@@ -1,10 +1,8 @@
-library(testthat)
-
+suppressPackageStartupMessages(library(testthat))
 
 testthat::context("Testing process start:")
 
 #Testing material
-
 s1 = "AAT---AAACAAAGAATGCTTACTGT---ATAAGGCTTACTGTTCTAGCG---ATCACCGCG---TCATGTCTAGTTATGAACGGC------GGTTTAACATTGAATAGCAAGGCACTTCCATAATAGGGCCGTC---GTAATTGTCTGAATATAG------ATA------"
 s2 = "------AAGTAG---AATTTGATGCTACATTGGATGAGTCTACTTCGAGCGCGCCGCATCGATTGCAAGAGCAGTGTTGCCT---AAGAGCCGTTAGATGCGTCGTTG---ATCGCGTCCGATAATTCGGGAGTTG---CCCAATATTTAATATGATGA---TAG---TAA"
 
@@ -12,39 +10,54 @@ m.2 = "AAT===AAACAAAGAATGCTTACTGT---ATAAGGCTTACTGTTCTAGCG---ATCACCGCG---TCATGTCT
 r.2 = "======TGACAAAATTTGATGCTACATTGGAT---AGTCTACTTCGAGCGCGCCGCATCGATTGCAAGAGCAGTGTTGGAAGAGCCGTTAGATGCGTCGTTGTGAATCGCGTCCGATAATTCGGGAGTTGCGCCCCAATATTTAATATGATGATTATAGCTATAAATGTAGAT"
 
 
-####################
-#Predicted results
 
+
+
+#Expected results
 S1 = "AAT===AAACAAAGAATGCTTACTGT---ATAAGGCTTACTGTTCTAGCG---ATCACCGCG---TCATGTCTAGTTATGAACGGC------GGTTTAACATTGAATAGCAAGGCACTTCCATAATAGGGCCGTC---GTAATTGTCTGAATATAG------ATA======"
 S2 = "======AAGTAG---AATTTGATGCTACATTGGATGAGTCTACTTCGAGCGCGCCGCATCGATTGCAAGAGCAGTGTTGCCT---AAGAGCCGTTAGATGCGTCGTTG---ATCGCGTCCGATAATTCGGGAGTTG---CCCAATATTTAATATGATGA---TAG===TAA"
 
 M.2 = "AAT===AAACAAAGAATGCTTACTGT===ATAAGGCTTACTGTTCTAGCG===ATCACCGCG===TCATGTCTAGTTATGAACGGC------GGTTTAACATTGAATAGCAAGGCACTTCCATAATAGGGCCGTC---GTAATTGTCTAATATAG======ATAGTAT===TA"
 R.2 = "======TGACAAAATTTGATGCTACATTGGAT---AGTCTACTTCGAGCGCGCCGCATCGATTGCAAGAGCAGTGTTGGAAGAGCCGTTAGATGCGTCGTTGTGAATCGCGTCCGATAATTCGGGAGTTGCGCCCCAATATTTAATATGATGATTATAGCTATAAATGTAGAT"
 
-
-source("../update_gap.R")
 Window <<- 6
 Wall   <<- 12
 
+#####################################################
+source("../update_gap.R")
+
+#test filter_long func.
+testthat::test_that("Test filter_Long() func", {
+  a = "AAT---------------AAAAAA"
+  b = "TAAAAAAAAAAAAAAAAAAAAAAA"
+  dna = DNAStringSet(c(a,b))
+  dna.1 = str_split(as.character(dna), '')
+  g     = lapply(dna.1, function(x) { IRanges(x == '-')})
+  g     = IRangesList(g)
+  x     = g[[1]]
+  y     = x
+  y[1]  = NULL
+  
+  expect_equal(filter_Long(x,a),"AAT===============AAAAAA")
+  expect_equal(filter_Long(y,a),a)
+})
+
+
 #test start_stop_test func.
-test_that("Test start_stop_test()",{
+test_that("Test start_stop_test() func",{
   expect_equal(start_stop_test(s1), S1)
   expect_equal(start_stop_test(s2), S2)
 })
 
 #test ad_gap_dis func.
-test_that("Test ad_gap_dis()",{
-  m2 = str_split(as.character(m.2), '')
-  r2 = str_split(as.character(r.2), '')
-  
+test_that("Test ad_gap_dis() func",{
+  m2  = str_split(as.character(m.2), '')
   g.m = lapply(m2, function(x) { IRanges(x == '-')})
-  g.r = lapply(r2, function(x) { IRanges(x == '-')})
-  
   g.m = IRangesList(g.m)[[1]]
-  g.r = IRangesList(g.r)[[1]]
-  
+  g.m2= g.m
+  g.m2=NULL
   expect_equal(ad_gap_dis(g.m, m.2, r.2), c(M.2, R.2))
-  
+  expect_equal(ad_gap_dis(g.m2, m.2, r.2),c(m.2,r.2))
 })
 
 
