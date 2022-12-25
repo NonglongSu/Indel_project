@@ -1,0 +1,2 @@
+PITG_01705_aa.fasta
+PITG_01705_AAaln.fasta

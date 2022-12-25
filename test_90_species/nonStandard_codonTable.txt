@@ -1,0 +1,16 @@
+Oxytricha,Stylonychia,Paramecium,Tetrahymena,Oxytrichidae,Glaucoma chattoni
+Acetabularia
+Batophora
+Hexamita inflata, Diplomonadida ATCC50330,ATCC50380
+Candida albicans, Candida auris, Candida dubliniensis, Candida guilliermondii, Candida lusitaniae, Candida tropicalis, Candida cylindracea, Candida melibiosica, Candida parapsilosis,Candida rugosa
+Debaryomyces hansenii
+Lodderomyces elongisporus
+Gracilibacteria
+Pachysolen tannophilus
+Parduczia
+Condylostoma magnum
+Mesodinium, Myrionecta
+Carchesium
+Blastocrithidia
+Escherichia coli
+

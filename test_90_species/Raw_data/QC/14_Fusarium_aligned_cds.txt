@@ -1,0 +1,8 @@
+FGRRES_00847_aa.fasta
+FGRRES_00847_AAaln.fasta
+FGRRES_06757_aa.fasta
+FGRRES_06757_AAaln.fasta
+FGRRES_08493_aa.fasta
+FGRRES_08493_AAaln.fasta
+FGRRES_13673_aa.fasta
+FGRRES_13673_AAaln.fasta

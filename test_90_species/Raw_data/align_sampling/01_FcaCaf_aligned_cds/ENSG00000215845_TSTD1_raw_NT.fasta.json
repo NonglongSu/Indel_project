@@ -1,0 +1,802 @@
+[
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------AT------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0150765,
+    "log_weight": -4.19462
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT------------------------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0302525,
+    "log_weight": -3.49817
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.0507666,
+    "log_weight": -2.98052
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.00819965,
+    "log_weight": -4.80366
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCC------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATG------------------------------------AA---------------------------------------------------------------------------CCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------"
+    },
+    "weight": 7.32532e-05,
+    "log_weight": -9.52159
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCA------------------------------------------------------------------------------------------------------------------------------------------------------------------------AAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------"
+    },
+    "weight": 0.00958898,
+    "log_weight": -4.64714
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.0688006,
+    "log_weight": -2.67654
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCA------------------------------------------------------------------------------------------------------------------------------------------GCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAA------------------------AGAA------------------GGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTG------------------------------------------------------------------------------------------------------------------------------------------------------GAGGATGG------AAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------"
+    },
+    "weight": 2.18578e-08,
+    "log_weight": -17.6387
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.0507666,
+    "log_weight": -2.98052
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "------CC---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATT---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GA---------------------------------------------------------------------"
+    },
+    "weight": 0.00594157,
+    "log_weight": -5.12578
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCA------------ACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTC---------------------------AAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------"
+    },
+    "weight": 0.0070804,
+    "log_weight": -4.95043
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATG---------------------------------------------------------------------------------------------AACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------"
+    },
+    "weight": 0.00228163,
+    "log_weight": -6.08286
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGAT------------------------GGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAG------------------------------------------------------------------------------------------------------------------------------------------------------------TACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.000124475,
+    "log_weight": -8.99141
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "------CC---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATT------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GA------------------------------------------------------------"
+    },
+    "weight": 0.00578336,
+    "log_weight": -5.15277
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  },
+  {
+    "aln": {
+      "Canis": "------CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGGTTAG",
+      "Felis": "ATGAACCC------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------A---------------------------------------------------------AAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------"
+    },
+    "weight": 9.44837e-05,
+    "log_weight": -9.26708
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------AT------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0150765,
+    "log_weight": -4.19462
+  },
+  {
+    "aln": {
+      "Canis": "------CC---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATT---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GA---------------------------------------------------------------------"
+    },
+    "weight": 0.00594157,
+    "log_weight": -5.12578
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATG---------------------------------------------------------AACC---------------------------------------------------------------------------------------CA------------------------AAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------"
+    },
+    "weight": 0.000204616,
+    "log_weight": -8.49438
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT------------------------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0302525,
+    "log_weight": -3.49817
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCA------------ACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTC---------------------------AAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------"
+    },
+    "weight": 0.0070804,
+    "log_weight": -4.95043
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "------CC---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATT------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GA------------------------"
+    },
+    "weight": 0.00862484,
+    "log_weight": -4.75311
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATG------------------------------------------------------------------------------AACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.00455069,
+    "log_weight": -5.39248
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------GGC---------------------------------------------------------------------------------AAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.00878713,
+    "log_weight": -4.73447
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCA------------------------------------------------------------------------------------------------------------------------------------------GCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGG------------------------------------------------TCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTG------------------------------------------------------------------------------------------------------------------------------------------------------GAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------"
+    },
+    "weight": 0.000352737,
+    "log_weight": -7.94979
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.00819965,
+    "log_weight": -4.80366
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCAT------------CTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTC---------------------------------------------------------------------------------------------------------AAAGA------GAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.00115038,
+    "log_weight": -6.76766
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGA------------------------------------------------------------------------------------------------------------------------TGGGC---------------------------------AAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG---------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAG---------------------------------------------------------------------------GAATG------------------GGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 8.20189e-05,
+    "log_weight": -9.40856
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "---------------------CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "ATGAACCCAAAAGACTTCAAA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAAG---------------------------------------------------------------------------------------------------------------------TACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.0074373,
+    "log_weight": -4.90125
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCC------------AGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAA---------------------------GAGAAG---------------------------------------------------------------------------------------------------------------------TACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 1.64125e-05,
+    "log_weight": -11.0175
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.0507666,
+    "log_weight": -2.98052
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.0507666,
+    "log_weight": -2.98052
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATG---------------------------------------------------------------------------------------------------------------------------------------------------------------AACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.00450533,
+    "log_weight": -5.40249
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCC------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.00355789,
+    "log_weight": -5.63859
+  },
+  {
+    "aln": {
+      "Canis": "---------------------CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "ATGAACCCAAAAGACTTCAAA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAAG---------------------------------------------------------------------------------------------------------------------TACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.0074373,
+    "log_weight": -4.90125
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCA------------ACTTC---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------"
+    },
+    "weight": 0.0079879,
+    "log_weight": -4.82983
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAAC---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------ATG---------------------------------------------------------------------------------------------------------------------------------------------AACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------------------------"
+    },
+    "weight": 0.00484584,
+    "log_weight": -5.32964
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.0507666,
+    "log_weight": -2.98052
+  },
+  {
+    "aln": {
+      "Canis": "------CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGGTTAG",
+      "Felis": "ATGAACCC---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------"
+    },
+    "weight": 0.00505908,
+    "log_weight": -5.28657
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.0507666,
+    "log_weight": -2.98052
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------------------------"
+    },
+    "weight": 0.351286,
+    "log_weight": -1.04615
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGA------------------AAGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA------"
+    },
+    "weight": 0.0042128,
+    "log_weight": -5.46963
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.161169,
+    "log_weight": -1.8253
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGA------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------GATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG",
+      "Felis": "------------------------------------------------------------------------------ATGAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    },
+    "weight": 0.0507666,
+    "log_weight": -2.98052
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  },
+  {
+    "aln": {
+      "Canis": "CCTTCCGCAGCGCCCACGGTCTCGCTGCCTGAACTGCGCTCGCTGCTGGCCGCGGGCCAGGCCCGGCTCATCGACGTGAGATCGCGGGAGGAGGCGGCAGCGGGGACCATCCCGGGGGCGCTCAACATCCCGGTGTCCGAGCTGGAGAGCGCCCTGCAGATGGAGCCAGCTGCCTTCCAGGCTTTGTACGCCGCCGAGAAGCCGAAGCTGCAAGAGGAGAACCTCATCTTCTTCTGTCAGATGGGCAAGCGGGGCTTGCAGGCCACGCAGCTGGCCCGAGGCCTGGGATACGCAGGGGCTCGCAACTTCGCAGGGGCCTACAGAGAATGGTCCCAGAAAGAAGGTTAG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "Felis": "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------AT---------------------------------------------------------------------------------------------------------GAACCCAAAAGACTTCAAAGAGAAGTACAATGAAGTAAAACCATCCAAATCTGACAGCCTAGTGTTTTCTTGTTTAGCCGGAGTGAGAAGCAAGAAGGCTGTGGACACAGCAGTATCTCTGGGCTTTAACAGTGTTCAACATTATGCTGGAGGATGGAAGGAATGGGTGACTTATGAATTTTCAGAAAAGAAAAAAGGAAATTGA"
+    },
+    "weight": 0.0605842,
+    "log_weight": -2.80372
+  }
+]

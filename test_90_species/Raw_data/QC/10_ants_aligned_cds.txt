@@ -1,0 +1,4 @@
+LOC105617165_aa.fasta
+LOC105617165_AAaln.fasta
+LOC105626616_aa.fasta
+LOC105626616_AAaln.fasta
