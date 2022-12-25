@@ -4,8 +4,8 @@ library(seqinr)
 
 #file1 = "../test_human_mouse_rat/Raw_data_2/Alignments/prank_out/ENSG00000155657.fa"
 #file2 = "../test_human_mouse_rat/Raw_data_2/cds_seq/ENSG00000155657.fa"
-#file3 = "../Raw_data/mapped_cds_seq/"
-map_cds2aa = function(file1, file2, file3){
+#ouD = "../Raw_data/mapped_cds_seq/"
+map_cds2aa = function(file1, file2, ouD){
 data1 = read.fasta(file1, seqtype="AA", as.string = FALSE)
 data2 = read.fasta(file2, seqtype="DNA", as.string = FALSE,forceDNAtolower = FALSE)
 
@@ -21,7 +21,7 @@ for(i in 1:length(data1)){
 name = names(data1)
 
 write.fasta(sequences = data2,names = name, nbchar=80,
-            open = "w", as.string = FALSE, file.out = paste0(file3, basename(file1)))
+            open = "w", as.string = FALSE, file.out = paste0(ouD, basename(file1)))
 }
 
 args = commandArgs(trailingOnly=TRUE)

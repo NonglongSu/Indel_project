@@ -33,8 +33,6 @@ phylo_em = function(p){
     ll = sum(log(Pab*cf0)*dat)
     cat(sprintf("%.6f\n", ll))
     
-    
-    
     ##construct the Jkl matrix       
     J = outer(D/T1, D/T1, function(x,y) {
       ifelse(x-y == 0,

@@ -1,4 +1,4 @@
-#Trim to species pair. 
+#Trim reference 
 suppressPackageStartupMessages(library(Biostrings))
 
 #setwd("~/Dropbox (ASU)/Indel_project/test_human_mouse_rat/Raw_data")

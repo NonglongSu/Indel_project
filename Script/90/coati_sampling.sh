@@ -14,5 +14,5 @@ echo ${seed1}
 for f in ${dir1}/${seed1}/*
 do
   seed2=$(basename "${f}")
-  ~/coati/builddir/src/coati-sample ${f} -o ${dir2}/${seed2}.json -k 3 -n 1000 ${pars}
+  ~/coati/builddir/src/coati-sample ${f} -o ${dir2}/${seed2}.json -k 3 -n 100 ${pars}
 done
