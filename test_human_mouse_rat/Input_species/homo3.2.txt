@@ -1,0 +1,3 @@
+mmusculus	mus_musculus	mouse
+hsapiens	homo_sapiens	human
+mmulatta	macaca_mulatta	macaque

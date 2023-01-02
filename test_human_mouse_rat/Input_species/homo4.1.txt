@@ -1,0 +1,4 @@
+hsapiens	homo_sapiens	human
+cgchok1gshd	cricetulus_griseus	hamster
+mmusculus	mus_musculus	mouse
+rnorvegicus	rattus_norvegicus	rat

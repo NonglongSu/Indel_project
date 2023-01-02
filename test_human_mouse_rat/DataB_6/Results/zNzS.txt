@@ -1,0 +1,3 @@
+nonsyn_indels	syn_indels	nonsyn_sites	syn_sites	obs_ratio	exp_ratio	omega
+139.000	285.000	782337.875	2195249.625	0.488	0.356	1.369
+237.000	654.000	781955.500	2195003.000	0.362	0.356	1.017

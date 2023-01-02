@@ -1,0 +1,3 @@
+hsapiens	homo_sapiens	human
+mmusculus	mus_musculus	mouse
+rnorvegicus	rattus_norvegicus	rat
